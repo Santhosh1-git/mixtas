@@ -222,7 +222,6 @@ function Home() {
     <br />
     <br />
     <Row> 
-       
     <Col lg='7' md={12} >
     <div className='hover_1' >
       <div className='content_1'  data-aos="fade-up"
@@ -235,7 +234,7 @@ function Home() {
            <br/>
            <Link to={'/SHOP'} ><button className='btn btn-white btn-mt'>Shop Now</button></Link>
       </div>
-        <div className='overflow_i1'  data-aos="fade-up"
+        <div className='overflow_i1' id='over'  data-aos="fade-up"
      data-aos-duration="500"  >      
         <img src={img4} alt="not found" className={'papular_img1'}  />
         </div>
@@ -250,13 +249,13 @@ function Home() {
            <br/>
            <Link to={'/SHOP'} ><button className='btn btn-white btn-mt'>Shop Now</button></Link>
       </div>
-        <div className='overflow_i2'  >
+        <div className='overflow_i2' id='over2' >
             <img src={img6} alt="not found" className={'papular_img2'} />
         </div>
         </div>
           </Col >
            <Col lg={6} md={6}>
-        <div className='overflow_i2 ower3' >
+        <div className='overflow_i2 ower3' id='over3' >
            <h4>mastering the art of</h4>
            <h4>menswear</h4>
            <h1>50%</h1>
@@ -276,7 +275,7 @@ function Home() {
            <br/>
            <Link to={'/SHOP'} ><button className='btn btn-white btn-mt'>Shop Now</button></Link>
       </div>
-    <div className='overflow_il' data-aos="fade-up"
+    <div className='overflow_il' id='overli' data-aos="fade-up"
      data-aos-duration="500" >
           <img src={img5} alt="not found"  className={'papular_img4'} />
           </div>
@@ -319,7 +318,7 @@ function Home() {
         },
         768:{
           width:768,
-          slidesPerView:2
+          slidesPerView:3
         },
         1024:{
           width:1024,
@@ -367,12 +366,12 @@ function Home() {
     <Container id='seller_2' data-aos="fade-up"
      data-aos-duration="2000">
       <Row>
-        <Col lg='6'>
+        <Col lg='6' md={12}>
             <div id='col-2'>
             <iframe width="560" height="100%" src="https://www.youtube.com/embed/wII9bv2P9c8?si=WMA6HiXj3PJz-Dzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </Col>
-        <Col lg='6'>
+        <Col lg='6' md={12} >
           <div className='seller_col_2' >
             <span><p>Up to 60% Off</p></span>
             <h4>Unleash Your Style</h4>
@@ -408,7 +407,7 @@ function Home() {
           return(
             <Col lg='3' md={6} className='hover_arrival_col' data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
               <Link to={'singleshop3/' +k.cont }>
-            <Card  className='arraivls_card' >
+            <Card  className='arraivls_card' id='arri_card' >
             <div className='icon' >
          <i class="fa-regular fa-heart"></i>
          <i class="fa-solid fa-magnifying-glass"></i>
@@ -537,8 +536,8 @@ function Home() {
 
         <Col lg='4' md={12} >
           <Card className='hover_card' >
-            <div  className='overflow_div' data-aos="fade-up"
-     data-aos-duration="500"  >
+            <div  className='overflow_div' id='over_div' data-aos="fade-up"
+     data-aos-duration="500">
             <img src={img37} alt="not found" />
             </div>
             <CardBody className='cardbody_text'data-aos="fade-up"

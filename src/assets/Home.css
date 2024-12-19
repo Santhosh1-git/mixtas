@@ -742,3 +742,158 @@
     
 }
 
+@media screen and (max-width:768px) {
+    .Slider_img img {
+        height: 28rem !important;
+        max-width: 100% !important;
+    }
+    .carousel_content_1 {
+        text-align: start;
+        position: absolute;
+        top: 2rem !important;
+        left: 64px !important;
+        color: rgb(66, 65, 65);
+    }
+    .carousel_content_1>p {
+        font-size: 33px !important;
+        text-transform: capitalize;
+        font-family: fantasy !important;
+        font-weight: 500 !important;
+        color: rgb(109, 106, 106);
+    }
+    .carousel_content_1 h5 {
+        font-size: 43px !important;
+        font-weight: 500 !important;
+        text-transform: capitalize;
+        line-height: 30px !important;
+    }
+    .carousel-control-prev{
+        display: none !important;
+    }
+    .carousel-control-next{
+        display: none !important;
+    }
+    .carousel_content_1 button {
+        margin-top: 31px !important;
+        padding: 13px 40px 13px 40px;
+        margin-left: -12px !important ;
+        font-size: 12px !important ;
+        background: black;
+        color: white;
+        font-weight: 500 !important;
+        border-radius: 5% !important;
+    }
+    .carousel-indicators>button{
+        display: inline-block !important;
+    }
+    .carousel_content_2 {
+        text-align: center;
+        position: absolute;
+        right: -18rem !important ;
+        top: -1px !important ;
+        color: black;
+    }
+    .carousel_content_2 h5 {
+        font-size: 50px !important ; 
+        font-weight: 500 !important ;
+        text-transform: capitalize;
+        line-height: 37px !important ;
+    } 
+    .carousel_content_2 button {
+        margin-top: 12px !important ;
+        padding: 13px 40px 13px 40px;
+        background: black;
+        color: white;
+        font-weight: 500 !important;
+        border-radius: 5%;
+        font-size: 13px !important ;
+    }
+
+    .overflow_i1>img{
+        width: 43rem !important;
+    }
+    #over{
+        width: 43rem !important;
+    }
+    .hover_1 .content_1 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 52rem !important;
+        left: 65px !important;
+    }
+    #over2{
+        width: 350px !important;
+    }
+    .overflow_i2>img{
+        width: 350px !important;
+    }
+    .hover_2 .content_2 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 76rem !important;
+        margin-left: 23px !important;
+        color: white !important;
+    }
+    #over3{
+        width: 328px !important;
+        overflow: hidden !important;
+        height: 310px;
+        margin-top: 5px;
+        background: #b78259;
+        color: white;
+    }
+
+    .papular_img4 {
+        height: 698px;
+        width: 688px !important;
+        transition: 1s;
+        margin-top: 7px !important;
+    }
+    #overli{
+        height: 698px;
+        width: 688px !important;
+        margin-top: 7px !important;
+    }
+    .content_3 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 93rem !important;
+        margin-left: 30px !important;
+        color: black;
+    }
+    .hover_col{
+        width:100% !important;
+    }
+    #col-2>iframe{
+        width: 100% !important;
+    }
+    .seller_col_2{
+        width: 100% !important;
+        margin-top: 40px !important;
+    }
+    /* new arraivls */
+    #arri_card img {
+        transition: 2s;
+        height: 300px !important;
+        width: 100% !important;
+    }
+    .popular_container{
+        width: 100% !important;
+    }
+    .head_fluid{
+        width: auto !important;
+    }
+    /* blog */
+    .hover_card{
+      position: relative !important;
+      left: 150px !important;
+    }
+    #over_div{
+        width: 604px !important;
+    }
+    .overflow_div>img {
+        height: 300px !important;
+        width: 604px !important;
+        transition: 1s;
+    }
+}
