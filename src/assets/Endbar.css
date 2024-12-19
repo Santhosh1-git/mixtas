@@ -78,17 +78,6 @@
    width: 100% !important ;
 }
 
-@media screen and (max-width:768px){
-    #content_1 i{ 
-        margin-top: 10px !important;
-        margin-bottom: 30px !important;
-    }
-    #content_5{
-        margin-top: 30px !important;
-    }
-    
-}
-
 
 
 
