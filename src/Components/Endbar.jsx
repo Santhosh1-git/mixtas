@@ -55,7 +55,7 @@ function Endbar() {
         <div id='content_5' >
         <h4>Let’s get in touch</h4>
         <p>Sign up for our newsletter and receive 10% off your</p>
-        <input type="text"  placeholder='Enter your email' /><i class="fa-solid fa-arrow-right"></i>
+        <input type="text"  placeholder='Enter your email' />
         </div>
         </Col>
         
