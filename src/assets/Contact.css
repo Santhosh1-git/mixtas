@@ -1,0 +1,71 @@
+/* -------------------------- */
+    /* contact header */
+/* -------------------------- */
+
+#contact_head>center>h5{
+        font-size: 70px !important;
+}
+
+/* ------------------------------------ */
+    /* contact informations start */
+/* ------------------------------------ */
+.map{
+    text-align: center !important;
+}
+.map>i{
+    font-size: 35px !important;
+    color: white;
+    background: black !important;
+    padding: 25px 30px 25px 30px;
+    border-radius: 50% !important;
+    margin-bottom: 25px !important;
+}
+
+.map p{
+    margin-bottom: -10px !important;
+    font-weight: 450;
+    color: rgb(102, 100, 100);
+}
+/* ------------------------------------ */
+    /* contact informations end */
+/* ------------------------------------ */
+
+/* form */
+#given_adress>h5{
+    font-size: 40px !important;
+    text-transform: capitalize !important;
+    margin-bottom: 40px;
+}
+
+
+#given_adress>.textfi{
+    margin-bottom: 35px !important;
+    width: 100% !important;
+    border-bottom: 1px solid rgb(155, 151, 151);
+}
+
+#given_adress #standard-multiline-static{
+    height: 180px !important;
+    width: 540px !important;
+    margin-bottom: 40px !important;
+}
+
+#given_adress button{
+    background: black;
+    color: aliceblue;
+    padding: 10px  40px 10px 40px;
+    margin-bottom: 40px !important;
+    font-weight: 400;
+    border: none !important;
+    text-transform: capitalize;
+}
+
+#given_adress button:hover{
+    background: white;
+    color: black;
+}
+
+#ustate>iframe{
+    height: 650px !important;
+    margin-top: 40px;
+}

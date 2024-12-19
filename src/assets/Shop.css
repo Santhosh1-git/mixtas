@@ -1,0 +1,322 @@
+
+/* header */
+.Shop_header{
+    padding: 60px;
+}
+.Shop_header>h3{
+    font-size: 65px;
+    font-weight: 500;
+}
+
+#top_container{
+    margin-top: 60px;
+}
+/* header end */
+
+/* imgs upper icon_content start */
+#shop_size{
+    text-align: end;
+    margin-bottom: 40px;
+}
+
+#result_showing{
+    color: rgb(150, 148, 148) !important    ;
+}
+
+
+.spn1:focus{
+    text-decoration: underline !important;
+    text-underline-offset: 10px;
+}
+#row_col_icon{
+    margin-left:38px !important ;    
+}
+.i1{
+    margin-right: 10px;
+    color:white;
+    background-color: black;
+    padding: 5px;
+    border:1px solid black !important;
+
+}
+.i2{
+    margin-right: 10px;
+    color:black;
+    background-color: white;
+    padding: 5px;
+    border:1px solid black !important;
+}
+
+#row_col_icon span{
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 3.1px;
+}
+
+/* imgs upper icon_content end */
+
+
+/* header */
+/* -------------------------------------------- */
+                /* tables start */
+/* -------------------------------------------- */
+.tab_div{
+   text-align: start !important;
+   justify-items: start !important;
+   margin-left: -20px !important;
+}
+
+#occadian{
+    position: sticky;
+    top: 0px !important;
+    
+}
+.end{
+    float: right !important;
+}
+/* hover text */
+#tab_1>ul>li>.start:hover{
+    color: black;
+}
+
+#tab_1>ul>li{
+    margin-bottom: 15px;
+
+}
+#tab_1>ul{
+    list-style-type: disc;
+   margin-left: -20px !important;
+   color: rgb(107, 106, 106) !important;
+}
+
+.tab_heading{
+    font-weight: 500 !important;
+    font-size: 18px;
+}
+
+/* table2 */
+
+
+#tab_2>ul>li:hover{
+    color: black;
+}
+#tab_2>ul{
+    list-style: none;
+   margin-left: -30px !important;
+}
+#tab_2>ul>li{
+    text-align: start !important;
+    margin-bottom: 15px;
+    margin-right: 40px !important;
+    text-transform: capitalize;
+   color: rgb(107, 106, 106);
+
+}
+
+/* tab 3 */
+
+/* hover */
+#tab_3>ul>li:hover{
+    color: black;
+}
+
+
+#tab_3>ul{
+    list-style: none !important;
+    text-transform: capitalize;
+   margin-left: -30px !important;
+
+}
+#tab_3>ul>li{
+    margin-bottom: 15px;
+   color: rgb(107, 106, 106);
+
+}
+
+.color_num{
+    float: right !important;
+}
+
+
+.color1{
+    height: 15px;
+    width: 15px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius:50% !important;
+    margin-right: 8px;
+    background-color: blue !important;
+
+   
+}
+.color2{
+    height: 15px;
+    width: 15px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius:50% !important;
+    margin-right: 8px;
+    background-color: grey !important;
+}
+.color3{
+    height: 15px;
+    width: 15px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius:50% !important;
+    margin-right: 8px;
+    background-color: green !important;
+}
+.color4{
+    height: 15px;
+    width: 15px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius:50% !important;
+    margin-right: 8px;
+    background-color: red !important;
+}
+.color5{
+    height: 15px;
+    width: 15px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius:50% !important;
+    margin-right: 8px;
+    background-color: yellow !important;
+}
+
+
+/* tab 4 */
+
+/* hover */
+#tab_4>ul>li:hover{
+    color: black;
+}
+
+#tab_4>ul{
+    list-style: none !important;
+    text-transform: capitalize;
+   margin-left: -30px !important;
+}
+#tab_4>ul>li{
+   color: rgb(107, 106, 106);
+}
+
+/* tab 5 */
+
+.bg_1{
+    background-color:#EEEEEE;
+    padding: 5px;
+    border-radius: 10% !important;
+    text-transform: capitalize;
+    margin-right: 4.6px;
+}
+.bg_1:hover{
+    color: white;
+    background: black !important;
+}
+
+#tab_5>ul{
+    list-style: none !important;
+    color: rgb(107, 106, 106);
+   margin-left: -30px !important;
+
+
+}
+#tab_5>ul>li{
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------------- */
+                /* tables end */
+/* -------------------------------------------- */
+
+/* ----------------------------------------------------- */
+                /* images style start */
+/* ----------------------------------------------------- */
+.img_div>img{
+    height: 290px !important;
+    width: 278px !important;
+}
+.icon_div{
+    margin-left: 40px !important;
+    margin-bottom: -30px;
+}
+
+.icon_new{
+    z-index: 900 !important;
+    color: black !important;
+    display: grid !important;
+    position: absolute !important ;
+    margin-top: 40px;
+    margin-left: 208px;
+    display: none !important ;
+}
+
+.icon_new>i{
+    background: white ;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 25px;
+    border-radius: 50% !important;
+    transition: 1s; 
+}
+
+.icon_new>i:hover{
+    color: white;
+    background: black;
+
+}
+.shop_img_hover:hover .icon_new{
+    display: inline !important;
+    z-index: 900 !important;
+    display: grid !important;
+}
+
+
+.icon_div h4{
+    font-size: 17px !important;
+    font-weight: 400;
+}
+
+.icon_div p{
+    color: rgb(124, 123, 123);
+    text-transform: capitalize;
+}
+
+/* ----------------------------------------------------- */
+                /* images style end */
+/* ----------------------------------------------------- */
+
+/* accordion */
+
+#occadian .accordion-item{
+    margin-bottom: -25px !important;
+}
+
+.accordion-button{
+    outline: none !important ;
+    background: inherit !important;
+    border-bottom: 1px solid black !important;
+}
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.accordion-button>h5{
+   margin-left: -17px !important;
+
+}
+
+.accordion-header{
+    border: none!important;
+    outline: none !important;
+}
+
+
+
+

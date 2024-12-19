@@ -1,0 +1,435 @@
+
+
+@media screen and (max-width:768px){
+    /* carousel start */
+    .carousel-item>img{
+       width:100% !important;
+       height: 500px !important;
+    }
+    .carousel_content_1>p,h5{
+        font-size: 45px !important;
+        line-height: 35px !important;
+    }
+    .carousel_content_1 button{
+        padding: 10px !important;
+    }
+     .carousel_content_1{
+            margin-left: -60px;
+            margin-top: -75px !important;
+    }
+    .carousel_content_3>p,h5{
+        font-size: 45px !important;
+        line-height: 35px !important;
+        color: black;
+        text-transform: capitalize;
+    }
+
+    .carousel_content_3{
+        text-align: end !important;
+        margin-bottom: 9rem !important;
+        margin-right: -20px !important;
+    }
+    .carousel_content_3 button{
+        padding: 10px !important;
+    }
+    /* carousel end */
+
+
+    /* papular star  */
+        .overflow_i1{
+            width:700px !important;
+        }
+        .overflow_i1>img{
+            width:800px !important;
+        }
+        .content_1{
+            position: absolute !important;
+            top: 855px  !important;
+            left: 50px !important;
+        }
+        .content_1>p{    
+            font-size: 35px !important;
+            height: 28px !important;
+        }
+        .content_1 h5{    
+            font-size: 34px !important;
+            height: 27px !important;
+        }
+            .content_1 button{    
+            margin-left: -20px !important;
+        }
+
+        /* content2 */
+        .overflow_i2{
+            width:355px !important;
+        }
+        .overflow_i2>img{
+            width:355px !important;
+        }
+        .content_2{
+            position: absolute !important;
+            top: 78rem !important;
+        }
+        .content_2>p,h5{    
+            font-size: 25px !important;
+            height: 18px !important;
+        }
+        
+        .content_2 button{    
+            margin-left: -20px !important;
+            font-size: 12px;
+        }
+        /* content 3 */
+        .ower3{
+            width:341px !important;
+        }
+        .ower3>img{
+            width:355px !important;
+        }
+
+        /* content4 */
+        .overflow_il{
+            width:700px !important ;
+        }
+        .overflow_il>img{
+            width:700px !important;
+            margin-top: 5px !important;
+        }
+        .content_3{
+            position: absolute !important;
+            top: 95rem !important;
+        }
+        .content_3>p{
+            font-size: 35px !important;
+            height: 21px !important;
+            font-weight: 700;
+        }
+        .content_3 h5{
+            font-size: 35px !important;
+            height: 28px !important;
+            font-weight: 600;
+        }
+    /* papular end  */
+
+        /* best seller start */
+        .hover_div>img{
+            width: 360px !important;
+            height: 100% !important;
+        }
+        /* second line */
+        #col-2>iframe{
+            width:700px !important;
+        }
+        /* new arraivals */
+        
+        .arraivls_card img{
+            width:350px !important;
+        }
+
+        /* blog */
+        .hover_card{
+            align-items: center !important;
+        }
+        .cardbody_text{
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;            
+            text-align: center !important;
+        }
+        
+}
+
+
+/* mobile view */
+
+@media screen and (max-width:320px){
+    /* carousel start */
+    .carousel-inner{
+        width:auto !important;
+    }
+    .carousel-item>img{
+        width:auto  !important;
+        height: 400px !important;
+    }
+    .carousel-control-prev{
+        display: none !important;
+    } 
+    .carousel-control-next{
+        display: none !important;
+    }       
+    /* .carousel-indicators{
+        margin-right: -170px !important;
+    }   */
+    .carousel-indicators>button{
+        display: inline !important;
+        margin-right: -80px !important;
+        padding: 5px !important;
+    }
+    .carousel_content_1{
+        margin-left: -110px !important;
+        margin-top: -110px !important;
+    }
+    .carousel_content_1>p{
+        font-weight: 200 !important;
+        font-size: 30px !important;
+        margin-bottom: 5px !important;
+    }
+    .carousel_content_1 h5{
+        font-size: 40px !important;
+        margin-bottom: 20px !important;
+        font-weight: 500 !important;
+    }
+    .carousel_content_1 button{
+        margin-top: 40px !important;
+        margin-left: -12px !important;
+        border-radius: 10% !important;
+        border: none !important;
+    }
+    /* carousel end */
+        /* papular start */
+            .popular{
+                position: relative;
+                right: -150px !important;    
+            }
+            /* img1 */
+            .content_1{
+                margin-left: -20px !important;
+                width: 400px !important;
+            }
+            .content_1>p{
+                font-size:30px !important ;
+                margin-bottom: 40px !important;
+            }
+            .content_1 h5{
+                font-size: 45px !important;
+                margin-bottom: 20px !important;
+                font-weight: 500 !important;
+            }
+            .content_1 button{
+                padding: 15px !important;
+                font-size: 30px !important;
+            }
+            .overflow_i1{
+                height: 550px !important;
+                width: 645px !important;
+                margin-bottom: 8px !important;
+            }
+            .overflow_i1>img{
+                height: 550px !important;
+            }
+            /* img2 */
+            .overflow_i2{
+                width: 645px !important;
+                height: 550px !important;
+                margin-bottom: 8px !important;
+            }
+            .overflow_i2>img{
+                width: 645px !important;
+                height: 550px !important;
+            }
+           
+            .content_2>p{
+                position: relative;
+                bottom: -12rem !important;
+                font-size: 50px !important;
+                width: 500px !important;
+                font-weight: 400;
+                margin-bottom: 110px !important;
+             }
+             .content_2 h5{
+                 position: relative;
+                 bottom: -12rem !important;
+                 font-size: 65px !important;
+                 margin-bottom: 40px !important;
+                 color: #f0efef !important;
+             }
+             .content_2 button{
+                 position: relative;
+                 bottom: -12rem !important;
+                 padding: 16px !important;
+                 font-size: 30px !important;
+                 margin-top: 20px !important;
+             }
+
+            /* img3 */
+            .overflow_i2>h4{
+                font-size: 60px !important;
+                font-weight: 800 !important;
+                margin-top: 50px !important;
+            }
+            .overflow_i2 h1{
+                font-size:13rem !important ;
+            }
+            .overflow_i2 button{
+                margin-top: 20px !important;
+                font-size: 45px !important;
+            }
+            
+            /* img4 */
+            .overflow_il{
+                width: 645px !important;
+                height: 750px !important;
+            }
+            .overflow_il>img{
+                width: 645px !important;
+                height: 750px !important;
+            }
+            .content_3>p{
+               position: relative;
+               bottom: -62rem !important;
+               font-size: 40px !important;
+               width: 500px !important;
+               margin-bottom: 70px !important;
+               color: rgb(34, 33, 33);
+            }
+            .content_3 h5{
+                position: relative;
+                bottom: -62rem !important;
+                font-size: 60px !important;
+                font-weight: 600 !important;
+                margin-bottom: 30px !important;
+                color: rgb(17, 17, 17);
+            }
+            .content_3 button{
+                position: relative;
+                bottom: -62rem !important;
+                font-size: 35px !important;
+                margin-left: -20px !important;
+                margin-bottom: -120px !important;
+                width: 280px !important;
+                padding: 15px !important;
+            }
+        /* papular end  */
+        /* best_seller start */
+                .best_seller{
+                width: 645px !important;
+                }
+                .best_seller>p{
+                    font-size: 30px !important;
+                }
+                .best_seller h4{
+                    font-size: 55px !important;
+                }
+               .hover_div{
+                width: 645px !important;
+                height: 500px  !important;
+               }
+               #card_1{
+                width: 645px !important;
+                height: 600px  !important;
+                margin-left: 25px !important;
+            }
+            .cardbody_1>p{
+                font-size: 30px !important;
+            }
+            .cardbody_1 h6{
+                    font-size: 30px !important;
+                    width: 640px !important;
+            }
+        /* best_seller send */
+
+        /* best seller cont2  start */
+            #col-2>iframe{
+                width: 645px !important;
+                height: 700px !important;
+            }
+            .seller_col_2{
+                margin-top: 120px !important;
+                width: 645px !important;
+            }
+            .seller_col_2 span>p{
+                font-size: 40px !important;
+            }
+            .seller_col_2 h4{
+                font-size: 75px !important;
+                width: 610px !important;
+                margin-top: 25px !important;
+            }
+            .seller_col_2 p{
+                font-size: 45px !important;
+            }
+            .seller_col_2 button{
+                font-size: 40px !important;
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+            }
+
+        /* best seller cont2  end */
+        /* new arrivals start */
+        #new_arrivals_head{
+            text-align: center !important;
+            width: 645px !important;
+        }
+        #new_arrivals_head>p{
+            font-size: 40px !important;
+        }
+        #new_arrivals_head h5{
+            font-size: 65px !important;
+        }
+
+        .hover_arrival_col{
+            width: 645px !important;
+        }
+
+        .arraivls_card>img{
+            width: 645px !important;
+            height: 550px !important;
+        }
+        .arraivals_body>p{
+            font-size:30px !important ;
+            margin-bottom: 20px !important;
+        }
+        .arraivals_body h6{
+                font-size: 35px !important;
+                width: 645px !important;
+            margin-bottom: 20px !important;
+        }
+        #newarrivals_container button{
+            font-size: 25px !important;
+            margin-left:140px !important;
+            width: 100%;
+        }
+        /* new arrivals end */
+        /*  popular brands  start */
+        .popular_container{
+            width: 645px !important;
+        }
+        .papular_imgs>img{
+            margin-right: 150px !important;
+        }
+
+        /*  popular brands  end */
+
+}
+
+
+
+/* end bar  */
+@media screen and (max-width:426px){
+    #content_1 h4{
+        font-size: 30px !important;
+    }
+    #content_1 p{
+        max-width: auto !important;
+    }
+    #content_1 i{
+        margin-bottom: 30px !important;
+    }
+    #content_5 p{
+        max-width: auto !important;
+    }
+    #content_5 input{
+        max-width: auto !important;
+    }
+    .hrline{
+        max-width: auto !important;
+    }
+    #copy p{
+        max-width: auto !important;
+    }
+    .ads_img>img{
+        display: none !important;
+    }
+    .end_bar{
+       max-width: auto !important;
+    }
+}

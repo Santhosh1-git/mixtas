@@ -1,0 +1,23 @@
+.fav_head{
+    margin-left: 105px !important;
+}
+
+.fav_head h4{
+    margin-top: 40px;
+    font-size: 50px !important;
+}
+
+#cont_div{ 
+    margin-top: 40px !important;
+}
+
+#cont_div>img{
+    height: 300px !important;
+    width: 400px !important;
+}
+
+#content{
+    margin-left: -100px !important;
+    margin-top: 140px !important;
+    margin-right: 30px !important;
+}

@@ -1,0 +1,259 @@
+.header{
+    margin-bottom: -60px !important ;
+    color: black !important;
+    }
+
+ #sticky{
+    position: sticky !important ;
+    top: 0px !important ;
+    z-index: 1000 !important ;
+    background-color: white !important ;
+    padding: 25px;
+ }  
+a{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-left: 25px;
+    margin-right: -0px;
+    z-index: 1000 !important ;
+    text-decoration: none;
+    padding-right: 7px;
+}
+
+.header>h5{
+    font-size: 120px;
+    font-weight: 1000;
+    text-align: center !important;
+    padding-bottom: 60px !important;
+    margin-left:23rem !important;  
+    font-family: serif;  
+}
+
+#icon_div{
+    margin-top: 80px;
+    margin-left: 55px;
+
+}
+
+#icon_div>i{
+    margin-right: 30px !important;
+    font-size: 21px !important ;
+    color:black !important;    
+}
+
+#icon_div .heart{
+    margin-left: -20px !important;
+}
+
+/* search icon */
+
+#search_int{
+    border:none;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    outline: none !important;
+    width: 50%;
+    padding: 20px;
+    text-align: start !important;
+    font-size: 20px;
+   
+}
+
+.search_i{
+    color: silver !important;
+    position: relative;
+    left: -28px;     
+}
+
+.dismis_1{
+    border: 1px solid silver;
+    border-radius: 50%;
+    padding: 15px !important ;
+    position: relative;
+    top: 30px;
+    right: 80px;
+    transition: 1s;
+}
+
+.dismis_1:hover{
+    transform: rotate(90deg);
+}
+
+/* user icon style */
+
+.holediv{
+    width: 100%;
+}
+
+.headtag{
+    text-transform: uppercase;
+    padding: 20px 0px 0px 10px;
+}
+
+.int_all{
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 9px;
+    text-transform: capitalize;
+    border: 1px silver solid;
+    outline: none;
+}
+
+.submit_btn{
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 9px;
+    text-transform: capitalize;
+    border: 1px silver solid;
+    outline: none;
+    background: rgb(19, 19, 19);
+    color: white;
+    font-weight: 500;
+}
+
+#ptag{
+    text-decoration: underline !important;
+    color: black;
+    margin-bottom: 50px;
+}
+#register{
+    text-align: center !important;
+    align-items: center;
+}
+
+#spn_2{
+    text-decoration: underline !important;color: black;
+}
+
+.dismis_2{
+    border: 1px solid silver;
+    border-radius: 50%;
+    padding: 15px !important ;
+    transition: 1s;
+}
+
+.dismis_2:hover{
+    transform: rotate(90deg);
+}
+
+
+/* last icon */
+
+#last_icon>i{
+    background: silver;
+    padding: 8px 10px 8px 10px !important;
+    border-radius: 50% !important;
+}
+#last_icon{
+    margin-top: 80px !important;
+}
+
+.btn-close{
+    border-radius: 50% !important;
+    color: black !important ;
+    border:1px solid silver ;
+}
+.dissmis_3:hover{
+    transform: rotate(90deg) !important ;
+}
+
+/* phone header */
+.bars-head{
+    display:none !important;
+}
+
+@media screen and (max-width:768px){
+    .header>h5 {
+        font-size: 70px;
+        font-weight: 1000;
+        text-align: center !important;
+        margin-top: -35px !important;
+        padding-bottom: 50px !important;
+        margin-left: 1rem !important;
+        font-family: serif;
+        overflow: hidden !important;
+    }
+    .header>i{
+        position: relative;
+        top: 45px !important;
+        margin-left: -45px !important;
+        font-size: 30px !important;
+    }
+    
+
+    #icon_div>i {
+        margin-right: 23px !important;
+        font-size: 19px !important;
+        color: black !important;
+    }
+    #icon_div {
+        margin-top: -50px;
+        margin-left: 33rem;
+    }
+    #sticky{
+        display: none !important;
+    }
+    .bars-head{
+        display:inline-block !important;
+    }
+    #sticky1{
+        display: grid !important;
+    }
+    #sticky1>a{
+           margin-top: 20px !important; 
+           font-weight: 200 !important;
+    }
+    .can1{
+        width: 35% !important;
+    }
+}
+@media screen and (max-width:425px){
+
+    .header>h5 {
+        font-size: 55px;
+        font-weight: 1000;
+        text-align: center !important;
+        margin-top: -35px !important;
+        padding-bottom: 50px !important;
+        margin-left: -1rem !important;
+        font-family: serif;
+        overflow: hidden !important;
+    }
+    .head-to-container{
+        padding-top: 10px !important;
+    }
+
+    #icon_div i {
+        margin-right: -103px !important;
+        font-size: 30px !important;
+        margin-top: 1px !important;
+        position: relative;
+        left: 35px !important;
+    }
+    .none-sm{
+        display: none !important;
+    }
+    .header>i {
+        margin-right: 22px;
+        font-size: 20px;
+        color: black;
+        position: relative;
+        left: 5rem !important;
+        padding-bottom: 30px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+

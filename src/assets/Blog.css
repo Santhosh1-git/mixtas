@@ -1,0 +1,152 @@
+/* header blog start  */
+.Blog_header{
+    padding: 60px;
+}
+.Blog_header>h3{
+    font-size: 65px;
+    font-weight: 500;
+}
+/* header blog send  */
+/* ------------------------------------------- */
+            /* left boxes start */
+/* ------------------------------------------- */
+#boxes{
+    position: sticky !important;
+    top: 0px !important;
+}
+
+#int1{
+    width: 250px !important;
+    height: 14px;
+    border:rgb(139, 137, 137)  !important;
+}
+.search_icon{
+    position: relative !important ;
+   top: 15px;
+   left: -35px;
+   color: rgb(139, 137, 137);   
+   z-index: 900 !important;
+}
+/* box_2 */
+#boxes .accordion-item{
+    width: 78% !important;
+    /* height: 68px !important; */
+    padding-top: -40px;
+    outline-style: none;
+}
+
+.acrot_1s{
+    float: right !important;
+}
+
+.body_box1>ul{
+    list-style: none;
+    margin-left: -40px;
+    li{
+        margin-top: 15px;
+        color: rgb(82, 78, 78);   
+    }
+}
+
+/* box_2 */
+.body_box2{
+    border: 1px solid silver;
+    width: 275px;
+}
+
+.body_box2>table{
+    td{    
+    border: 1px solid silver;
+    /* border-collapse:2px !important ; */
+    padding: 7px;
+        color: rgb(114, 111, 111);
+        text-align: center;
+}
+    th{
+    border: 1px solid silver;
+        background-color: silver;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+}
+/* box 4 */
+#imgs>img{
+    height: 95px;
+    width: 75px;
+    margin-bottom: 40px !important;
+    margin-left: -15    px !important;
+}
+#box_4_content{
+    margin-bottom: 40px;
+    height: 95px !important ;
+    width: 100%;
+
+}
+#box_4_content>p{
+    
+        font-size: 14.4px;
+        text-align: start !important;
+        margin-left: 10px !important;
+}
+/* box_5 */
+.border_tag{
+    background-color: rgb(219, 218, 218);
+    padding: 6px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/* ------------------------------------------- */
+            /* left boxes end */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+            /* right column start  allstyle */
+/* ------------------------------------------- */
+.admin_img>img{
+    height: 100%;
+    width: 400px;
+    transition: 1s;
+    margin-right: 50px;
+}
+.admin_img{
+    height: 100%;
+    width: 400px;
+    overflow: hidden;
+    margin-left: -50px;
+
+}
+.admin_img>img:hover{
+    transform: scale(1.1);
+}
+
+.admin_content{
+    text-transform: capitalize;
+}
+.hrline{
+    text-align: start !important ;
+    margin-left: -50px;
+    color: rgb(146, 143, 143);
+}
+
+.adminbtns{
+    text-transform: uppercase;
+    color:  white;
+    background: black;
+    border-radius: 8px;
+    padding: 10px;
+    border: none !important;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.adminbtns:hover{
+        color: black;
+        background: silver;
+}
+/* ------------------------------------------- */
+            /* right column end */
+/* ------------------------------------------- */
+

@@ -1,0 +1,56 @@
+
+
+
+
+
+.img_row{
+    margin-left: 40px;
+}
+
+#content{
+    z-index: 1000 !important;
+    margin-bottom: -140px;
+}
+ 
+
+
+#content h4{
+    font-size: 17px !important;
+    font-weight: 400;
+}
+
+#content p{
+    color: rgb(124, 123, 123);
+    text-transform: capitalize;
+}
+
+
+
+.img_map>img{
+    padding-bottom: 10px !important ;
+    height: 280px !important;
+    width: 264px !important;
+    z-index: 100 !important;
+}
+.ic{
+    z-index: 900 !important;
+    color: black !important;
+    display: grid !important;
+    position: absolute !important ;
+    margin-top: 40px;
+    margin-left: 208px;
+    display: none !important ;
+
+}
+.ic>i{
+        background: white;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 25px;
+        border-radius: 50% !important;
+        transition: 1s;    
+}  
+
+

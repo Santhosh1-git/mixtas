@@ -1,0 +1,127 @@
+/* ---------------------------------------- */
+              /* admin1  start */
+/* ---------------------------------------- */
+/* heading */
+#ad_head1>h4{
+    margin-top: 40px;
+    font-size: 65px;
+    font-weight: 500;
+    margin-left:50px;
+}
+#ad_head1 img{
+        margin-left:50px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+}
+
+#admin1_img{
+    margin-top: 40px;
+    height: 750px;
+    width: 100%;
+}
+
+#content_ad1{
+    margin-left: 150px;
+    margin-right: 10px;
+}
+#content_ad1 p{
+    margin-top: 40px;
+    margin-right: 150px;
+    font-size: 19px;
+    text-align: start;
+    color: rgb(109, 106, 106);
+}
+#content_ad1 h5{
+  
+        font-size: 35px;
+  
+}
+
+
+
+/* admin2 */
+#content_adi2{
+    margin-top: 2rem;
+    img{
+        height: 100%;
+        width: 820px; 
+    }
+}
+#content_adi2 p{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    color: rgb(109, 106, 106);
+    font-size: 19px;
+    line-height: 30px;
+}
+#content_adi2 h5{
+    margin-left: 150px;
+    margin-right: 10px;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#ad1_icon{
+    margin-left: 150px;
+    margin-right: 10px;
+    i{
+        font-size: 28px;
+    }
+
+}
+/* next prew  */
+
+.htag{  
+    border-top: 1px solid slategray;
+    border-bottom: 1px solid slategray;
+    padding: 25px 0px 25px 0px;
+    margin-left: 150px;
+    text-align: center !important;
+    margin-right: 150px;
+    color: slategray;
+}
+.htag .rightr{
+    color: slategray;
+}
+.htag .leftl{
+    color: slategray;
+}
+.prw{
+    text-transform: uppercase !important;
+   
+
+}
+.next{
+    margin-right: 10px;
+    text-transform: uppercase !important;
+    
+
+}
+/* admin_contact */
+
+#admin_contact{
+    margin-left: 150px;
+    margin-right: 10px;
+}
+#admin_contact textarea{
+    height: 200px;
+    width: 810px;
+}
+#admin_contact .textf{
+    margin-right: 67px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.lastbtn{
+    margin-bottom: 50px;
+    color:white;
+    background: black;
+    text-transform: capitalize;
+}
+/* ---------------------------------------- */
+              /* admin1  end */
+/* ---------------------------------------- */
