@@ -278,13 +278,22 @@ a{
         width:auto !important;
     }
     .header>h5 {
-        font-size: 74px;
+        font-size: 74px !important;
         font-weight: 1000;
         text-align: center !important;
         padding-bottom: 60px !important;
         margin-top: -32px;
-        margin-left: -16rem !important;
+        margin-left: -2rem !important;
         font-family: serif;
+    }
+    #icon_div {
+        margin-top: -53px !important ;
+        margin-left: 537px !important ;
+    }
+    #icon_div i {
+        margin-right: 27px !important;
+        font-size: 20px !important;
+        color: black !important;
     }
     .header>i {
         margin-right: 22px;
@@ -293,18 +302,7 @@ a{
         position: relative;
         left: 1rem !important;
         top: -0.2rem;
-    }
-    #icon_div {
-        margin-top: -53px !important ;
-        margin-left: 470px !important ;
-    }
-    #icon_div i {
-        margin-right: 27px !important;
-        font-size: 20px !important;
-        color: black !important;
-    }
-
-    
+    }   
 }
 
 
