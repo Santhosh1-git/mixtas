@@ -720,4 +720,25 @@
 /* ------------------------------------- */
 
 
+@media screen and (max-width:1024px) {
+    .Slider_img img {
+        height: 50rem !important;
+        max-width: 100% !important;
+    }
+
+    .carousel_content_1>p {
+        font-size: 57px !important;
+        text-transform: capitalize;
+        font-family: fantasy;
+        font-weight: 300 !important;
+        color: rgb(109, 106, 106);
+    }
+    .carousel_content_1 h5 {
+        font-size: 63px;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 49px;
+    }
+    
+}
 

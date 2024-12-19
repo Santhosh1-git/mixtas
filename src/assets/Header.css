@@ -176,7 +176,7 @@ a{
     }
     #icon_div {
         margin-top: 80px;
-        margin-left: 23px;
+        margin-left: -20px;
     }
     .header>h5 {
         font-size: 120px;
@@ -189,16 +189,86 @@ a{
     }
     .header>i {
         margin-right: 22px;
-        font-size: 35px;
+        font-size: 41px !important ;
         color: black;
-        position: relative;
-        left: 4rem !important;
-        top: 3.8rem;
+        position: relative !important ;
+        left: 5rem !important;
+        top: 3.8rem !important;
     }
     #icon_div i {
     margin-right: 24px !important;
     font-size: 30px !important;
     color: black !important;
+    }
+    /* papular  */
+    .papular_img1 {
+        height: 333px;
+        width: 554px !important;
+        margin-bottom: 30px !important;
+        transition: 1s;
+    }
+    .overflow_i1 {
+        overflow: hidden !important;
+        height: 333px;
+        width: 554px !important;
+    }
+    .content_1 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 76rem !important;
+        left: 65px !important;
+    }
+    .papular_img2 {
+        height: 315px;
+        width: 101% !important;
+        transition: 1s;
+    }
+    .overflow_i2 {
+        width: 275px !important;
+        overflow: hidden !important;
+        height: 310px;
+        margin-top: 5px;
+        background: #b78259;
+        color: white;
+    }
+    .papular_img4 {
+        height: 698px;
+        width: 100% !important;
+        transition: 1s;
+    }
+    #sub-frame-error {
+        
+        height: 93% !important ;
+        position: absolute;
+        text-align: center;
+        width: 83% !important ;
+    }
+    /* papular  end*/
+    /* best_seller start */
+    .best_seller{
+        width: 76% !important;
+    }
+    /* best_seller end */
+    /* new arraival start */
+    .arraivls_card>img {
+        transition: 2s;
+        height: 237px !important;
+        width: 227px !important;
+    }
+    /* new arraival end */
+    /* papular brand start */
+    /* blog  start */
+    .head_fluid{
+        width: 100% !important;
+    }
+    .overflow_div>img {
+        height: 300px !important;
+        width: 303px !important;
+        transition: 1s;
+    }
+    /* blog  end */
+    .details_container{
+        width: auto !important;
     }
 }
 

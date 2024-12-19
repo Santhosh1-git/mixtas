@@ -78,6 +78,23 @@
    width: 100% !important ;
 }
 
+@media screen and (max-width:1024px) {
+    #content_1>h4 {
+        font-size: 60px !important;
+        font-weight: 900;
+    }
+    #content_1 i {
+        padding: 14px;
+        border: 1px solid rgb(51, 50, 50);
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 14px;
+        margin-top: 15px;
+        color: aliceblue !important;
+        transition: 1s !important;
+    }
+}
+
 
 
 
