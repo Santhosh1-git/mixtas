@@ -272,6 +272,36 @@ a{
     }
 }
 
+@media screen and (max-width:668px) {
+    .header>i {
+        margin-right: 22px;
+        font-size: 20px;
+        color: black;
+        position: relative;
+        left: 5rem !important;
+        margin-left: -56px;
+        top: -0.2rem;
+        margin-left: -57px !important;
+    }
+    .none-sm{
+        display: none !important;
+    }
+    .header>h5{
+        font-size: 30px !important;
+        font-weight: 1000 !important ;
+        text-align: center !important;
+        padding-bottom: 60px !important;
+        margin-top: -32px !important ;
+        margin-left: -2rem !important;
+        font-family: serif;
+    }
+    #icon_div {
+        display: flex;
+        position: relative !important;
+        left: -40px !important;
+    }  
+}
+
 
 @media screen and (max-width:768px) {
     .head-to-container{
@@ -305,7 +335,37 @@ a{
     }   
 }
 
+@media screen and (max-width:400px) {
+    .header>h5 {
+        font-size: 52px !important;
+        font-weight: 1000;
+        text-align: center !important;
+        padding-bottom: 60px !important;
+        margin-top: -32px;
+        margin-left: -1rem !important;
+        font-family: serif;
+    }    
+    .header>i {
+        margin-right: 20px;
+        font-size: 20px;
+        color: black;
+        position: relative;
+        left: 5rem !important;
+        top: -0.2rem;
+        margin-bottom: 15px !important;
+    }
+    #icon_div {
+        margin-top: -45px !important ;
+        margin-left: 467px !important ;
+    }
+    #icon_div i {
+        margin-right: 27px !important;
+        font-size: 30px !important;
+        color: black !important;
+    }
+    
 
+}
 
 
 

@@ -157,7 +157,7 @@ function Home() {
     <button type="button"   data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner Slider_img">
-    <div class="carousel-item active">
+    <div class="carousel-item active" id='carousl-img' >
     <img src={img1} alt="slider-one"/> 
     <div class="carousel-caption carousel_content_1 ">
     <p>chic charisma</p>
@@ -167,7 +167,7 @@ function Home() {
     <Link to={'/SHOP'} >  <button className='btn btn-dark btn-outline-light' >Shop Now </button></Link>
    </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" id='carousl-img'  >
     <img src={img2} alt="slider-two"/>
     <div class="carousel-caption carousel_content_1 ">
     <p>chic reverie</p>
@@ -177,7 +177,7 @@ function Home() {
     <Link to={'/SHOP'} ><button className='btn btn-dark btn-outline-light' >Shop Now</button></Link>
    </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" id='carousl-img'  >
     <img src={img3} alt="slider-three"/>
     <div class="carousel-caption carousel_content_2 ">
     <p>chic reverie</p>
@@ -240,7 +240,7 @@ function Home() {
         </div>
     </div>
         <Row>
-        <Col lg={6} md={6} >
+        <Col lg={6} md={6}>
         <div className='hover_2'>
         <div className='content_2'>
            <p> urban elegance</p>
@@ -266,7 +266,7 @@ function Home() {
     </Col>
     <Col lg='5' md={12}>
     <div className='hover_3' >
-      <div className='content_3' data-aos="fade-up"
+      <div className='content_3' id='cont3' data-aos="fade-up"
      data-aos-duration="300" >
            <p> adorable essentials</p>
            <h5>everyday</h5>

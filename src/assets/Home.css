@@ -742,6 +742,7 @@
     
 }
 
+
 @media screen and (max-width:768px) {
     .Slider_img img {
         height: 28rem !important;
@@ -896,4 +897,138 @@
         width: 604px !important;
         transition: 1s;
     }
+}
+
+@media screen and (max-width:668px) {
+    .carousel-item>img{
+        width: 100% !important;
+    }
+
+    #over>img {
+        width: 35rem !important;
+    }
+
+    #over{
+        width: 35rem !important;
+    }
+
+    #overli{
+        height: 698px;
+        width: 80% !important;
+        transition: 1s;
+    }
+
+    #overli>img{
+        height: 698px;
+        width: 80% !important;
+        transition: 1s;
+    }
+    .hover_1 .content_1 {
+        z-index: 900 !important;
+        margin-left: 30px !important;
+    }
+    .overflow_i2{
+        width: 40rem !important;
+    }
+    .papular_img2{
+        width: 40rem !important;
+    }
+    #cont3{
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 113rem !important;
+        margin-left: 30px !important;
+        color: black;
+    }
+    /* blog */
+    .details_container{
+        margin-left: 210px !important;
+
+    }
+}
+
+@media screen and (max-width:400px) {
+    .carousel{
+        width: 40.1rem !important;
+    }
+    #carousl-img img{
+        width: 40.1rem !important;
+    }
+    /* papular start */
+    .popular{
+        margin-left: 220px !important;
+    }
+    #over{
+        width: 38.5rem !important;
+    }
+    #over>img{
+        width: 38.5rem !important;
+    }
+    .hover_1 .content_1 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 54rem !important;
+        left: 4px !important;
+    }
+
+    #over2{
+        width: 38.5rem !important;
+    }
+    #over2>img{
+        width: 38.5rem !important;
+    }
+    .hover_2 .content_2 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 77rem !important;
+        margin-left: 29px !important;
+        color: white !important;
+    }
+
+    #over3{
+        width: 38.5rem !important;
+    }
+
+
+   .overflow_i2 button {
+        margin-left: 36% !important ;
+        background: white;
+        color: black;
+        padding: 10px 20px 10px 20px;
+        font-weight: 600;
+    }
+
+    #overli{
+        width: 38.5rem !important;
+    }
+
+    #overli>img{
+        width: 38.5rem !important;
+    }
+    #cont3 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 118rem !important;
+        margin-left: 29px !important;
+        color: black;
+    }
+
+    /* best seller start */
+
+         .best_seller{
+            margin-left: 210px !important;
+         }
+        #col-2{
+        width: 38.5rem !important;
+        }
+        .seller_col_2{
+            width: 38.5rem !important;
+        }
+
+        #newarrivals_container{
+            margin-left: 150px !important;
+        }
+
+
+
 }

@@ -95,6 +95,7 @@
     }
 }
 
+
 @media screen and (max-width:768px) {
     .end_bar{
         max-width:auto !important
@@ -119,6 +120,19 @@
     }
 }
 
+@media screen and (max-width:668px){
+    .end_bar{
+        width: 42.6rem !important;
+    } 
+}
+
+@media screen and (max-width:400px) {
+    .end_bar{
+        width: 41rem !important;
+    }
+    
+    
+}
 
 
 
