@@ -226,6 +226,9 @@ a{
         left: -100% !important ;
         font-size: 30px !important;
     }
+    .none-sm{
+        display: none !important;
+    }
     
 }
 
@@ -257,6 +260,9 @@ a{
         top: 7% !important;
         left: -100% !important ;
         font-size: 30px !important;
+    }
+    .none-sm{
+        display: none !important;
     } 
 }
 
@@ -296,9 +302,7 @@ a{
         top: 3.5% !important;
         margin-left: -20% !important;
         font-size: 25px !important;
-    } 
-
-
+    }
 }
 
 

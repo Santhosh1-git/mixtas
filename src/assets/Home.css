@@ -243,7 +243,7 @@
 .content_1{
     z-index: 900 !important;
     position: absolute !important ;
-    top: 78rem !important ;
+    top: 86rem !important ;
     left: 140px !important ;
 }
 .content_1 p{
@@ -269,7 +269,7 @@
 .content_2{
     z-index: 900 !important;
     position: absolute !important ;
-    top: 101rem !important ;
+    top: 110rem !important ;
     margin-left: 15px !important ;
     color: white !important ;
 }
@@ -297,7 +297,7 @@
 .content_3{
     z-index: 900 !important;
     position: absolute !important ;
-    top: 80rem !important ;
+    top: 87rem !important ;
     margin-left: 30px !important ;
     color: black;
 }
@@ -328,14 +328,9 @@
  /* ----------------------------------------- */
 /* popular end */
  /* ----------------------------------------- */
-
-
-
-
 /* ------------------------------------- */
         /* best_seller  start*/
 /* ------------------------------------- */
-
 .best_seller>p{
     color: rgb(124, 122, 122);
     text-align: center !important ;
@@ -450,7 +445,7 @@
     text-align: center !important;
     font-weight: 600;
     color: rgb(145, 139, 139);
-}
+}   
 
 .seller_col_2 button{
     background: black;
@@ -473,6 +468,8 @@
     color: silver;
     text-decoration: line-through;
 }
+
+
 /* ------------------------------------- */
         /* best_seller  end*/
 /* ------------------------------------- */
@@ -1169,10 +1166,12 @@
 
     #overli{
         width: 100% !important;
+        height: 500px !important ;
+        
     }
 
     .papular_img4 {
-        height: 70% px;
+        height: 500px !important ;
         width: 100% !important;
         transition: 1s;
         padding-top: 4px;

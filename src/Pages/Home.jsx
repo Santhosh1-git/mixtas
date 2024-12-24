@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Container, Row , Col, CardBody,Card } from 'react-bootstrap'
 import '../assets/Home.css'
 import { Link } from 'react-router-dom';
@@ -142,6 +142,7 @@ function Home() {
           const out1=[mouseout_img5,mouseout_img6,mouseout_img7,mouseout_img8,mouseout_img9,mouseout_img10,mouseout_img11,mouseout_img12]
 
     // new arraivals_img end
+    
 
   return (
     <>
@@ -301,7 +302,7 @@ function Home() {
         <Row>
         <Swiper 
       modules={[Navigation,Autoplay]}
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={4}
       navigation
       direction='horizontal'
@@ -312,19 +313,18 @@ function Home() {
         pauseOnMouseEnter: true
       }}
       breakpoints={{
-        320:{
-          width:320,
-          slidesPerView:1,
+        1024:{
+          width:1024,
+          slidesPerView:4
         },
         768:{
           width:768,
           slidesPerView:3
         },
-       
-        1024:{
-          width:1024,
-          slidesPerView:4
-        }
+        320:{
+          width:320,
+          slidesPerView:1,
+        },
       }}
       
     >
@@ -357,7 +357,6 @@ function Home() {
           </Swiper>         
     </Row>
       </Container>
-
 
       {/* -------------------------------------- */}
               {/* best seller cont2 */}
