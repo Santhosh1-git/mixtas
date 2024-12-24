@@ -162,7 +162,7 @@ function Home() {
     <div class="carousel-caption carousel_content_1 ">
     <p>chic charisma</p>
     <h5>effortless</h5>
-    <h5> glamour for</h5>
+    <h5> glamour for</h5> 
     <h5> every occasion </h5>
     <Link to={'/SHOP'} >  <button className='btn btn-dark btn-outline-light' >Shop Now </button></Link>
    </div>
@@ -320,6 +320,7 @@ function Home() {
           width:768,
           slidesPerView:3
         },
+       
         1024:{
           width:1024,
           slidesPerView:4
@@ -368,7 +369,7 @@ function Home() {
       <Row>
         <Col lg='6' md={12}>
             <div id='col-2'>
-            <iframe width="560" height="100%" src="https://www.youtube.com/embed/wII9bv2P9c8?si=WMA6HiXj3PJz-Dzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wII9bv2P9c8?si=WMA6HiXj3PJz-Dzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </Col>
         <Col lg='6' md={12} >
