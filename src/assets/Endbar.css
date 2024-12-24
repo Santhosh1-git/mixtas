@@ -91,7 +91,11 @@
         transition: 1s !important;
         margin-bottom: 30px;
     }
+}
 
+@media screen and (max-width:768px) {
+
+    
     
 }
 

@@ -40,7 +40,7 @@ function Header() {
         <Col lg={3} md={12}>
         <div id='icon_div' >
           {/* search */}
-<i class="fa-solid fa-magnifying-glass"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
+<i class="fa-solid fa-magnifying-glass  "  id='search' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
