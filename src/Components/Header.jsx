@@ -13,7 +13,7 @@ function Header() {
     const link5=page.link5
   return (
     <>
-    <Container fluid className='head-to-container' >
+    <Container fluid className='head-to-container'>
       <Row>
        <Col lg={9} md={12}>  
         <div className='header'>
@@ -24,11 +24,11 @@ function Header() {
   </div>
   <div class="offcanvas-body">
   <div id='sticky1'>
-        <Link to={'/'+link1} > <a> <i class="fa-solid fa-house"></i>{link1} </a></Link>
-        <Link to={'/'+link2} ><a> <i class="fa-solid fa-cart-shopping"></i>{link2} </a> </Link>
-        <Link to={'/'+link3} ><a> <i class="fa-solid fa-clipboard"></i>{link3} </a></Link>
-        <Link to={'/'+link4} ><a><i class="fa-solid fa-user"></i> {link4} </a></Link>
-        <Link to={'/'+link5} ><a><i class="fa-solid fa-phone"></i> {link5} </a></Link>
+        <Link to={'/'+link1} reloadDocument={true} > <a> <i class="fa-solid fa-house"></i>{link1} </a></Link>
+        <Link to={'/'+link2} reloadDocument={true} ><a> <i class="fa-solid fa-cart-shopping"></i>{link2} </a> </Link>
+        <Link to={'/'+link3} reloadDocument={true} ><a> <i class="fa-solid fa-clipboard"></i>{link3} </a></Link>
+        <Link to={'/'+link4} reloadDocument={true} ><a><i class="fa-solid fa-user"></i> {link4} </a></Link>
+        <Link to={'/'+link5} reloadDocument={true} ><a><i class="fa-solid fa-phone"></i> {link5} </a></Link>
         </div> 
     <div class="dropdown mt-3">
     </div>

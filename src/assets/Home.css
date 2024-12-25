@@ -779,6 +779,13 @@
     }
 
 
+    /* papular imgs */
+
+   
+
+
+
+
     .arraivls_card>img {
         transition: 2s;
         height: 280px !important;
@@ -921,7 +928,6 @@
         width: 100% !important;
     }
 }
-
 @media screen and (max-width:768px) {
     .carousel_content_1 {
         text-align: start;
@@ -1009,7 +1015,7 @@
 
     .carousel-indicators button{
         display:  inline-block !important;  
-        background: black !important
+        padding: -15px !important;
     }
 
 
@@ -1082,6 +1088,74 @@
         width: 100% !important;
         transition: 1s;
     }
+}
+
+@media screen and (max-width:525px){
+
+    .papular_img1 {
+        height: 340px;
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        transition: 1s;
+    }
+    .content_1 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 125% !important;
+        left: 8% !important;
+    }
+    .hover_2{
+        width:97% !important;
+    }
+    .papular_img2 {
+        height: 320px;
+        transition: 1s;
+        width: 100% !important;
+    }
+    .overflow_i2 {
+        width: 100% !important;
+        overflow: hidden !important;
+        height: 320px;
+        margin-top: 5px;
+        background: #b78259;
+        color: white;
+    }
+
+    .content_2 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 190% !important;
+        margin-left: 15px !important;
+        color: white !important;
+    }
+    .hover_3{
+        width: 100% !important;
+    }
+
+    #overli {
+        width: 100% !important;
+    }
+
+    .papular_img4 {
+        height: 70%;
+        width: 100% !important;
+        transition: 1s;
+        padding-top: 4px;
+    }
+    .content_3 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 280% !important;
+        margin-left: 30px !important;
+        color: black;
+    }
+
+    .arraivls_card>img {
+        transition: 2s;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
 }
     
 
@@ -1214,7 +1288,6 @@
         margin-left: 20px !important;
         color: black;
     }
-
     /* new arraivels */
 
     .arraivls_card>img {
@@ -1222,8 +1295,10 @@
         height: 100% !important;
         width: 100% !important;
     }
-
 }
+
+
+
 
 
 

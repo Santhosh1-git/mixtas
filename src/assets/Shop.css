@@ -316,7 +316,31 @@
     border: none!important;
     outline: none !important;
 }
-
-
+.bars-head12{
+    display: none;
+}
+@media screen and (max-width:1024px){
+    #ocardian_div{
+        display: none !important;
+    }
+    #occadian12{
+        display: inline !important;   
+    }
+    .bars-head12{
+        width: fit-content !important;
+        position: fixed !important;
+        display: inline-block !important;
+    }
+    .img_div>img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:768) {
+    .mx-5 {
+        display: none !important;
+    }
+    
+}
 
 

@@ -69,3 +69,8 @@
     height: 650px !important;
     margin-top: 40px;
 }
+
+element.style {
+   
+    height: 100% !important;
+}

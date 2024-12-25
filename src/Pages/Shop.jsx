@@ -115,9 +115,140 @@ const [a,setA]=useState(12)
 
 <div>
   <Container id='top_container'>
-      <Row className='tab_div'  >
-      <Col lg={3}>
-      <div id='occadian'  >
+      <Row className='tab_div'>
+      <i class="fa-solid fa-sliders bars-head12 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
+<div class="offcanvas offcanvas-start can12" tabindex="-1" id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <div id='occadian1'>
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <p className='tab_heading ' >Product Categories</p>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <div id='tab_1' >
+        <ul>
+            <li><span className='start' > Bags  </span>       <span className='end' >(4)</span></li>
+            <li><span className='start' > Hoodies </span>     <span className='end' >(5)</span></li>
+            <li><span className='start' > Jackets </span>     <span className='end' >(25)</span></li>
+            <li><span className='start' > Men </span>         <span className='end' >(23)</span></li>
+            <li><span className='start' > Sweatshirts </span> <span className='end' >(10)</span></li>
+            <li><span className='start' > Tshirts </span>     <span className='end' >(15)</span></li>
+            <li><span className='start' > Women </span>       <span className='end' >(24)</span></li>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br />
+  <br />
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       <p className='tab_heading' >Price</p>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div id='tab_2' >
+          <ul>
+            <li>$50-$100</li>
+            <li>$100-$150</li>
+            <li>$150-$200</li>
+            <li>$200-$250</li>
+            <li>$250-$300</li>
+            <li>$1-$50</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br />
+  <br />
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       <p className='tab_heading' >color</p>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div id='tab_3' >        
+            <ul>
+                <li> <button className='color1' ></button>blue<span className='end'>(46)</span> </li>
+                <li> <button className='color2' ></button>grey<span className='end'>(46)</span> </li>
+                <li> <button className='color3' ></button>green<span className='end'>(46)</span> </li>
+                <li> <button className='color4' ></button>red<span className='end'>(46)</span> </li>
+                <li> <button className='color5' ></button>yellow<span className='end'>(46)</span> </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br />
+  <br />
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+      <p className='tab_heading' >Size</p>
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div id='tab_4' >
+        <ul>
+          <li> large <span className='end' >(46)</span></li>
+          <li> medium <span className='end' >(46)</span></li>
+          <li>small<span className='end' >(46)</span></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br />
+  <br />
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+      <p className='tab_heading' >Tags</p>
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div  id='tab_5' >
+        <ul>
+          <li><span className='bg_1' >clothing  </span> <span className='bg_1' > etc</span> <span className='bg_1'  >   fashion</span></li>
+          <li><span className='bg_1'>m11</span><span className='bg_1' >m12</span> <span className='bg_1' >m31</span></li>
+          <li><span className='bg_1'>m32</span><span className='bg_1' >m41</span> <span className='bg_1' >m71</span></li>
+          <li><span className='bg_1'>m72</span><span className='bg_1' >m81</span> <span className='bg_1' >men</span></li>
+          <li><span className='bg_1'>products</span> <span className='bg_1' > women </span> </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="dropdown mt-3">
+    </div>
+  </div>
+</div>
+      <Col lg={3} id={'ocardian_div'} >
+      <div id='occadian'>
       <div class="accordion" id="accordionExample">
   <div class="accordion-item ">
     <h2 class="accordion-header" id="headingOne">
@@ -241,7 +372,7 @@ const [a,setA]=useState(12)
       </Col>
       <Col>
       <Row className='mx-5' >
-      <Col lg={4} md={4} >
+      <Col lg={4} md={12} >
       <div id='result_showing' >
       <p> Showing 1–{a} of 47 results </p>
       </div>

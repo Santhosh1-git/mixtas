@@ -1,4 +1,4 @@
-#sticky1{
+.nav-fill{
     position: sticky !important ;
     top: 0px !important ;
     z-index: 1000 !important ;
@@ -8,7 +8,7 @@
  }  
 
 
- a{
+#link_div a{
     font-size: 15px;
     font-weight: 499 !important;
     color: black;
@@ -17,12 +17,11 @@
     z-index: 1000 !important ;
     text-decoration: none;
     z-index: 1000 !important;
-
 }
 
 
 
-i{
+.header i{
     margin-right: 18px;
     font-size: 21px;
     color: black;
@@ -31,19 +30,13 @@ i{
     z-index: 1000 !important;
 
 }
-
-
-h4{
-    padding: -10px 0px 10px 0px;
+.nav-item>center h4{
     font-weight: 800;
     font-size: 40px;
-    margin-top: -15px;
-    text-align: start;
     z-index: 1000 !important;
     font-family: serif;
-
+    margin-top: -10px !important;
 }
-
 
 .hr{
     width: 100% !important ;
@@ -51,11 +44,9 @@ h4{
 
 }
  
-
 .uppercontainer{
     text-align: start !important;
     z-index: 1000 !important;
-
 }
 
 .ptag{
@@ -83,64 +74,19 @@ h4{
     z-index: 1000 !important;
 
 }
-
-
-
-
-
-
 /* icons styles */
-
-
-
-.header{
-    margin-bottom: -60px !important ;
-    
-    }
-
- #sticky{
-    position: sticky !important ;
-    top: 0px !important ;
-    z-index: 1000 !important ;
-    background-color: white !important ;
-    padding: 25px;
- }  
-a{
+ #link_div a{
     font-size: 14.5px;
     font-weight: 500 !important;
     color: black;
     margin-right: -5px;   
     z-index: 1000 !important ;
     text-decoration: none;
-    /* text-align: start !important; */
-}
+ }
 
 #link_div{
-    margin-left: 80px;
+    margin-left: 180px;
 }
-
-.header>h4{
-    font-size: 120px;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 15px;
-
-}
-
-
-
-
-.header>i{
-    margin-right: 22px;
-    font-size: 20px;
-    color: black;
-    position: relative;
-    left:6rem !important;
-    top: -0.2rem;
-    
-}
-
 /* search icon */
 
 #search_int{
@@ -150,12 +96,8 @@ a{
     width: 50%;
     padding: 20px;
     text-align: start !important;
-    font-size: 20px;
-   
+    font-size: 20px;  
 }
-
-
-
 .search_i{
     color: silver !important;
     position: relative;
@@ -234,8 +176,63 @@ a{
 .dismis_2:hover{
     transform: rotate(90deg);
 }
+.bars-head1{
+    display: none !important;
+}
+
+#mixtas2{
+    display: none !important;
+    font-weight: 800;
+    font-size: 40px;
+    z-index: 1000 !important;
+    font-family: serif;    
+    margin-left: 70px !important;
+}
+#sticky1 a{
+        padding: auto !important ;
+        margin: 10px !important;
+        text-align: start !important;
+}
+
 
 /* ------------------------- */
     /* media query */
 /* ------------------------- */
 
+
+@media screen and (max-width:1024px) {
+    .spntag i{
+        display: none !important;
+    }    
+    #link_div {
+        margin-left: 80px;
+        display: none;
+    }    
+    .bars-head1{
+        display: inline-block !important;
+    }
+
+    /* mixtas  */
+    .nav-item>center>h4{
+        display: none !important;
+    }
+    #mixtas2{
+        display: inline-block !important;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .uppercontainer{
+        display: none !important;
+    }
+    
+    #mix{
+        display: flex !important ;
+    }
+    .header i{
+        margin-left: -5% !important;
+    }
+
+}
