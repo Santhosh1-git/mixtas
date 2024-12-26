@@ -82,7 +82,7 @@ function Contactus() {
           id="standard-multiline-static"
           label="your message"
           multiline
-          variant="standard" />
+          variant="standard" className='textarea'  />
           <br />
           <br />
           <br />

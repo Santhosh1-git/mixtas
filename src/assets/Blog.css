@@ -30,7 +30,6 @@
 /* box_2 */
 #boxes .accordion-item{
     width: 78% !important;
-    /* height: 68px !important; */
     padding-top: -40px;
     outline-style: none;
 }
@@ -105,14 +104,14 @@
             /* right column start  allstyle */
 /* ------------------------------------------- */
 .admin_img>img{
-    height: 100%;
-    width: 400px;
+    height: auto !important ;
+    width: 100% !important;
     transition: 1s;
     margin-right: 50px;
 }
 .admin_img{
-    height: 100%;
-    width: 400px;
+    height: auto !important;
+    width: 100% !important ;
     overflow: hidden;
     margin-left: -50px;
 
@@ -123,6 +122,7 @@
 
 .admin_content{
     text-transform: capitalize;
+    height: auto !important;
 }
 .hrline{
     text-align: start !important ;
@@ -146,12 +146,18 @@
         color: black;
         background: silver;
 }
+
+.admin_img{
+    margin-left: 1% !important;
+}
 /* ------------------------------------------- */
             /* right column end */
 /* ------------------------------------------- */
 
-element.style {
-    
-    height: 100% !important;
+
+@media screen and (max-width:1024px) {
+    #blog_details{
+        display: none !important;
+    }
     
 }

@@ -68,9 +68,14 @@
 #ustate>iframe{
     height: 650px !important;
     margin-top: 40px;
+    width: 100% !important;
+}
+.textarea{
+    width: 100% !important;
 }
 
-element.style {
-   
-    height: 100% !important;
+
+@media screen and (max-width:1024px) {
+
+    
 }

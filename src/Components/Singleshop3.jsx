@@ -304,6 +304,20 @@ function Singleshop3() {
         delay:2500,
         pauseOnMouseEnter: true
       }}
+      breakpoints={{
+        1024:{
+          width:1024,
+          slidesPerView:4
+        },
+        768:{
+          width:768,
+          slidesPerView:2
+        },
+        320:{
+          width:320,
+          slidesPerView:1,
+        },
+      }}
       
     >
       <SwiperSlide> 

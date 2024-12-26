@@ -780,12 +780,6 @@
 
 
     /* papular imgs */
-
-   
-
-
-
-
     .arraivls_card>img {
         transition: 2s;
         height: 280px !important;
@@ -887,7 +881,11 @@
 }
 
 @media screen and (max-width:990px) {
-
+    .mx-5 {
+        margin-right: 3rem !important;
+        margin-left: 3rem !important;
+        display: none !important;
+    }
     /* papular images */
     .content_1 {
         z-index: 900 !important;
@@ -1157,7 +1155,22 @@
     }
 
 }
+
+@media screen and (max-width:425px) {
+    .overflow_i1 {
+        overflow: hidden !important;
+        height: 320px !important;
+        width: 100% !important;
+    }
+    .content_3 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 307% !important;
+        margin-left: 30px !important;
+        color: black;
+    }
     
+}
 
 @media screen and (max-width:410px) {
 
@@ -1297,6 +1310,22 @@
     }
 }
 
+@media screen and (max-width:375px) {
+    .content_3 {
+        z-index: 900 !important;
+        position: absolute !important;
+        top: 295% !important;
+        margin-left: 20px !important;
+        color: black;
+    }
+    .papular_img4 {
+        height: 499px !important;
+        width: 100% !important;
+        transition: 1s;
+        padding-top: 4px;
+    }
+    
+}
 
 
 

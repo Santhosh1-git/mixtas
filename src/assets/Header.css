@@ -1,5 +1,5 @@
 .header{
-    margin-bottom: -30% !important ;
+    margin-bottom: -5% !important ;
     color: black !important;
     }
 
@@ -29,11 +29,10 @@ a{
     margin-left:35% !important;  
     font-family: serif;  
 }
-
-#icon_div{
-    margin-top: 25%;
-    margin-left: 55px;
+.rwo_div{
+    align-items: center !important;
 }
+   
 
 #icon_div>i{
     margin-right: 30px !important;
@@ -43,6 +42,10 @@ a{
 
 #icon_div .heart{
     margin-left: -20px !important;
+}
+.none-sm{
+    margin-right: 15px !important;
+    font-size: 20px;
 }
 
 /* search icon */
@@ -161,28 +164,39 @@ a{
 .bars-head{
     display:none !important;
 }
+.nav{
+    display: none !important;
+}
+#mixtas2 {
+    display: none !important;
+    font-weight: 800;
+    font-size: 83px !important ;
+    z-index: 1000 !important;
+    font-family: serif;
 
+}
 @media screen and (max-width:1024px){
+    .nav{
+        display: flex !important;
+        padding: 1px !important;
+        align-items: center !important;
+    }
+    .head-to-container{
+       display: none !important;
+    }
 
-    .header>h5 {
-        font-size: 70px;
-        font-weight: 1000;
-        text-align: center !important;
-        padding-bottom: 60px !important;
-        margin-left: 26% !important;
-        font-family: serif;
+    #mixtas2{
+    font-weight: 800;
+    font-size: 75px !important ;
+    z-index: 1000 !important;
+    font-family: serif;   
     }
-    #icon_div {
-        margin-top: 18%;
-        margin-left: 10%;
-        font-size: 10px !important;
-    }
+    
     #icon_div i {
         font-size: 20px !important;
         color: black !important;
-
     }
-    #sticky {
+    #sticky{
         display: none !important;
     }
     .bars-head{
@@ -193,31 +207,24 @@ a{
         font-size: 30px !important;
         
     }
-    #sticky1{
+    /* #sticky1{
         display: grid !important;
-    }
+    } */
     
 
 }
 
 @media screen and (max-width:990px) {
-    .header>h5 {
-        font-size: 70px;
-        font-weight: 1000;
-        text-align: center !important;
-        padding-bottom: 60px !important;
-        margin-left: -5% !important;
-        font-family: serif;
-    }
-    #icon_div {
-        margin-top: -5%;
-        margin-left: 80%;
-        font-size: 10px !important;
-    }
+    #mixtas2{
+        font-weight: 800;
+        font-size: 60px !important ;
+        z-index: 1000 !important;
+        font-family: serif;   
+        }
     #icon_div i {
         font-size: 20px !important;
         color: black !important;
-
+        padding: 10px !important;
     }
     #sticky {
         display: none !important;
@@ -271,24 +278,26 @@ a{
     }
 }
 @media screen and (max-width:588px) {
-    .header>h5 {
-        font-size: 70px;
-        font-weight: 1000;
-        text-align: center !important;
-        padding-bottom: 60px !important;
-        margin-left: 4% !important;
-        font-family: serif;
-    }
-    #icon_div {
-        margin-top: -7.5%;
-        margin-left: 75%;
-        font-size: 10px !important;
-    }
-    #icon_div i {
-        font-size: 20px !important;
-        color: black !important;
-        margin-right: 10px !important;
-    }
+    #mixtas2{
+        font-weight: 800;
+        font-size: 40px !important ;
+        z-index: 1000 !important;
+        font-family: serif;   
+        position: relative !important;
+        left: -10% !important;
+        }
+        .sm_heart{
+            display: none !important;
+        }
+   
+        .header i {
+            margin-right: 18px;
+            font-size: 17px;
+            color: black;
+            margin-top: -15px;
+            padding: 8px 0px 20px 0px;
+            z-index: 1000 !important;
+        }
     #sticky {
         display: none !important;
     }
@@ -309,15 +318,14 @@ a{
 }
 
 @media screen and (max-width:410px) {
-    .header>h5 {
-        font-size: 32px;
-        font-weight: 1000;
-        text-align: center !important;
-        padding-bottom: 60px !important;
-        margin-left: -50% !important;
-        font-family: serif;
-        margin-top: 1% !important;
-    }
+    #mixtas2{
+        font-weight: 800;
+        font-size: 37px !important ;
+        z-index: 1000 !important;
+        font-family: serif;   
+        position: relative !important;
+        left: 18% !important;
+        }
     #icon_div {
         margin-top: -8.5%;
         margin-left: 69%;
@@ -350,15 +358,14 @@ a{
     }
 }
  @media screen and (max-width:320px){
-    .header>h5 {
-        font-size: 30px;
-        font-weight: 1000;
-        text-align: center !important;
-        padding-bottom: 60px !important;
-        margin-left: -50% !important;
-        font-family: serif;
-        margin-top: 1% !important;
-    }
+    #mixtas2{
+        font-weight: 800;
+        font-size: 37px !important ;
+        z-index: 1000 !important;
+        font-family: serif;   
+        position: relative !important;
+        left: 30% !important;
+        }
     #icon_div {
         margin-top: -10.5%;
         margin-left: 59%;
