@@ -15,7 +15,7 @@ import imgblog4 from '../images/Blog_page/4.jpg'
 import Endbar from '../Components/Endbar'
 import Header from '../Components/Header'
   import img1 from '../images/slider/1.jpg'
-  import img2 from '../images/slider/2.jpeg'
+  import img2 from '../images/slider/2.jpg'
   import img3 from '../images/slider/3.jpg'
   // polupar
   import img4 from '../images/popular/1.jpg'
@@ -313,13 +313,9 @@ function Home() {
         pauseOnMouseEnter: true
       }}
       breakpoints={{
-        1024:{
-          width:1024,
-          slidesPerView:4
-        },
         768:{
           width:768,
-          slidesPerView:3
+          slidesPerView:3,
         },
         320:{
           width:320,
@@ -355,6 +351,8 @@ function Home() {
             )
           })}
           </Swiper>         
+
+
     </Row>
       </Container>
 
