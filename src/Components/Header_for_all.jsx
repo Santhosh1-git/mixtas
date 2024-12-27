@@ -149,60 +149,66 @@ function Header_for_all() {
   <li class="nav-item">
   </li>
   <li class="nav-item">
-  <div className='header'>    
-<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
-<div class="offcanvas offcanvas-end holediv " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div className='header'>   
+    {/*user  */}
+<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_head" aria-controls="offcanvasRight" ></i>
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight_head" aria-labelledby="offcanvasRightLabel">
 <div class="offcanvas-header">
 <h5 id="offcanvasRightLabel"  className='headtag'  >log in</h5>
 <button type="button" class="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
 <div class="offcanvas-body">
 <form action="#">
-  <input type="text" placeholder='username or email address' className='int_all' /><br />
-  <input type="password" placeholder='password' className='int_all' /><br />
-    <tr>
-    <td>
-    <FormControlLabel required control={<Checkbox />} label=" Remember me" />
-    </td>
-  </tr>
-  <button className='submit_btn' >log in</button>
-  <p id='ptag'>Lost your password?</p>
-  <center> <span  className='text-secondary' id='register' >Not a member?
-  <span id='spn_2' >Register</span></span>
-  </center>
- 
-</form>
-  </div> 
-</div>
-<i class="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
+ <input type="text" placeholder='username or email address' className='int_all' /><br />
+ <input type="password" placeholder='password' className='int_all' /><br />
+   <tr>
+   <td>
+   <FormControlLabel required control={<Checkbox />} label=" Remember me" />
+   </td>
+ </tr>
+ <button className='submit_btn' >log in</button>
+ <p id='ptag'>Lost your password?</p>
+ <center> <span  className='text-secondary' id='register' >Not a member?
+ <span id='spn_2' >Register</span></span>
+ </center>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasTopLabel">
-    </h5>
-    <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <center>
-  <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
-  </center>
-  </div>
+</form>
+ </div> 
 </div>
-    <i class="fa-regular fa-heart all_heart "></i>
- <i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"></i>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Shopping Cart</h5>
-    <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">  
-    <center>
-      <div id='last_icon' >
-      <i class="fa-solid fa-bag-shopping"  ></i>
-    <p>No products in the cart.</p>
-    </div>
-    </center>
-  </div>
+
+{/* search */}
+<i class="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop_head" aria-controls="offcanvasTop" ></i>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop_head" aria-labelledby="offcanvasTopLabel">
+ <div class="offcanvas-header">
+   <h5 id="offcanvasTopLabel">
+   </h5>
+   <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ </div>
+ <div class="offcanvas-body">
+   <center>
+ <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+ </center>
+ </div>
+</div>
+
+{/* heart */}
+   <i class="fa-regular fa-heart  sm_heart"></i>
+   {/* shopping cart */}
+<i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
+ <div class="offcanvas-header">
+   <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+   <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ </div>
+ <div class="offcanvas-body">  
+   <center>
+     <div id='last_icon' >
+     <i class="fa-solid fa-bag-shopping"  ></i>
+   <p>No products in the cart.</p>
+   </div>
+   </center>
+ </div>
 </div>
 </div>
   </li>

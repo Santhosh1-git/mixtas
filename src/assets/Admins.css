@@ -125,3 +125,78 @@
 /* ---------------------------------------- */
               /* admin1  end */
 /* ---------------------------------------- */
+
+@media screen and (max-width:1024px) {
+
+    #ad_head1 img {
+        display: none;
+    }
+    /* content */
+    #content_ad1 p {
+        margin-top: 40px;
+        font-size: 19px;
+        text-align: start;
+        color: rgb(109, 106, 106);
+        width: auto !important;
+        margin-left: 0% !important;
+        margin-right: auto !important;
+    }
+
+    #content_adi2 p {
+        margin-left: 0%;
+        margin-right: auto !important;
+        margin-bottom: 20px;
+        color: rgb(109, 106, 106);
+        font-size: 19px;
+        line-height: 30px;
+        width: auto !important;
+    }
+
+    /* second img */
+    img {
+        height: 100%;
+        width: 100% !important;
+    }
+    /* textarea */
+    #admin_contact textarea {
+        height: 200px;
+        width: auto !important;
+    }
+    #admin_contact .textf{
+        margin-right: 1% !important;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: auto !important;
+    }
+    #admin_contact{
+        margin-left: 2% !important ; 
+        margin-right: 1% !important;
+    }
+    #ad_head1>h4 {
+        margin-top: 40px;
+        font-size: 65px;
+        font-weight: 500;
+        margin-left: auto !important;
+        width: auto;
+    }   
+    #content_adi2 h5 {
+        margin-left: auto !important ;
+        margin-right: auto !important ;
+        font-size: 35px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+   
+
+        
+
+
+@media screen and (max-width:425px) {
+ #content_ad1{
+    margin-left: 0% !important;
+    margin-right: auto !important;
+}   
+    
+}
