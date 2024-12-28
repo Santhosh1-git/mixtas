@@ -6,6 +6,8 @@ import { Checkbox } from '@mui/material'
 import '../assets/Header.css'
 import {FormControlLabel} from '@mui/material'
 function Header() {
+  const [nav2,setNav2]=useState("none")  
+
     const link1=page.link1
     const link2=page.link2
     const link3=page.link3
@@ -99,35 +101,12 @@ function Header() {
         </center>
         </div> 
 
-
-
-
-
+        
 {/* header 2 */}
 
 <ul class="nav nav-pills nav-fill ">
   <li class="nav-item">
-  <i class="fa-solid fa-bars bars-head1 " data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample"></i>
-<div class="offcanvas offcanvas-start can1" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-  <div id='sticky1'>
-  <Link to={'/'+link1} reloadDocument={true} > <a>  <i class="fa-solid fa-house"></i>{link1} </a></Link>
-  <hr />
-        <Link to={'/'+link2} reloadDocument={true} ><a>  <i class="fa-solid fa-cart-shopping"></i>{link2} </a> </Link>
-        <hr />
-        <Link to={'/'+link3} reloadDocument={true} ><a>  <i class="fa-solid fa-clipboard"></i>{link3} </a></Link>
-        <hr />
-        <Link to={'/'+link4} reloadDocument={true} ><a> <i class="fa-solid fa-user"></i> {link4} </a></Link>
-        <hr />
-        <Link to={'/'+link5} reloadDocument={true} ><a> <i class="fa-solid fa-phone"></i> {link5} </a></Link>
-        </div> 
-    <div class="dropdown mt-3">
-    </div>
-  </div>
-</div>
+  <i class="fa-solid fa-bars bars-head1 " onClick={(()=>{setNav2(`flex`)})}  ></i>
       </li>
   <li class="nav-item">
   <center>
@@ -212,8 +191,21 @@ function Header() {
   </li>
 </ul>
 
-  
 
+
+
+<nav id='slider_2' style={{display:`${nav2}`}}>
+    <ul id='nav_2'>
+<i class="fa-solid fa-xmark dismis_nav" onClick={(()=>{setNav2(`none`)})}></i>
+<li> <Link to={'/'+link1} > <i class="fa-solid fa-house"></i>  <a>  {link1} </a></Link></li>
+
+<li><Link to={'/'+link2} > <i class="fa-solid fa-cart-shopping"></i> <a>  {link2} </a> </Link></li>
+<li><Link to={'/'+link3} ><i class="fa-solid fa-clipboard"></i> <a>  {link3} </a></Link></li>
+<li><Link to={'/'+link4} > <i class="fa-solid fa-user"></i> <a>   {link4} </a></Link></li>
+<li><Link to={'/'+link5} > <i class="fa-solid fa-phone"></i> <a>   {link5} </a></Link></li>
+  </ul>
+</nav>
+  
 
 </>
 

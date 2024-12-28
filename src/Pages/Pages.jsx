@@ -69,7 +69,7 @@ function Pages() {
         </Col>
         <div className='our_team' >
         <center>
-          <br />
+          <br />  
           <br />
           <br />
           <br />

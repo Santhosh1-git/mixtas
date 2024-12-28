@@ -310,17 +310,18 @@ function Home() {
       speed='500'
       autoplay={{
         delay:2500,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter:true
       }}
       breakpoints={{
+        1024:{
+          slidesPerView:4
+        },
         768:{
-          width:768,
-          slidesPerView:3,
+          slidesPerView:2
         },
         320:{
-          width:320,
-          slidesPerView:1,
-        },
+          slidesPerView:1
+        }
       }}
       
     >
@@ -462,18 +463,17 @@ function Home() {
         pauseOnMouseEnter: true
       }}
       breakpoints={{
-        320:{
-          width:320,
-          slidesPerView:3
+        1024:{
+          slidesPerView:6
         },
         768:{
-          width:768,
           slidesPerView:4
         },
-        1024:{
-          width:1024,
-          slidesPerView:6
+        320:{
+          slidesPerView:3
         }
+       
+        
       }}
     >
       <SwiperSlide >

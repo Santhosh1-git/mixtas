@@ -605,6 +605,10 @@
     color: rgb(145, 139, 139);
     text-transform: uppercase;
 }
+.papular_imgs{
+    width: 100% !important;
+    height: 100% !important;
+}
 
 .popular_brand_head h5{
     font-size: 50px;
@@ -1338,6 +1342,16 @@
         position: absolute !important;
         margin-top: -80% !important;
         color: white !important;
+    }
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+        display: none !important;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        display: none !important;
+
     }
     
 }
