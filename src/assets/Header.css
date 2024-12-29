@@ -47,7 +47,9 @@ a{
     margin-right: 15px !important;
     font-size: 20px;
 }
-
+.offcanvas{
+    height: 100% !important;
+}
 /* search icon */
 
 #search_int{

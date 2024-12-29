@@ -5,8 +5,11 @@ import { Container, Row ,Col } from 'react-bootstrap'
 import { Checkbox } from '@mui/material'
 import '../assets/Header.css'
 import {FormControlLabel} from '@mui/material'
+import { shop_search } from './Sreach_content'
 function Header() {
   const [nav2,setNav2]=useState("none")  
+  const [search,setsearch]=useState("")
+  const [datas,setdatas]=useState(shop_search)
 
     const link1=page.link1
     const link2=page.link2
@@ -35,8 +38,28 @@ function Header() {
   </div>
   <div class="offcanvas-body">
     <center>
-  <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+  <input type="text"  onChange={((e)=>{setsearch(e.target.value)})}  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
   </center>
+  <br />
+  <br />
+  <Container>
+  <Row>
+  { search.length > 0 && datas.map((e,k)=>{
+    return(
+      
+            <Col lg={4}>
+             <div>
+      <img src={e.image} alt="ihi" height={200} width={200} />
+      <p>{e.name.toLowerCase().includes(search.toLowerCase())? e.name :""}</p>
+      <h4>{e.title}</h4>
+      <p>{e.price}</p>
+       </div>
+            </Col>
+    ) 
+  })}
+   </Row>  
+    </Container>
+    
   </div>
 </div>
 {/* log in*/}
@@ -102,6 +125,9 @@ function Header() {
         </div> 
 
         
+
+
+
 {/* header 2 */}
 
 <ul class="nav nav-pills nav-fill ">
@@ -164,8 +190,26 @@ function Header() {
  </div>
  <div class="offcanvas-body">
    <center>
- <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+ <input type="text"  onChange={((e)=>{setsearch(e.target.value)})} id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
  </center>
+ <br />
+  <br />
+  <Container>
+  <Row>
+  { search.length > 0 && datas.map((e,k)=>{
+    return(
+            <Col lg={4}  >
+      <div>
+      <img src={e.image} alt="ihi" height={200} width={200} />
+      <p>{e.name.toLowerCase().includes(search.toLowerCase())? e.name :""}</p>
+      <h4>{e.title}</h4>
+      <p>{e.price}</p>
+       </div>
+    </Col>
+    ) 
+  })}
+   </Row>  
+    </Container>
  </div>
 </div>
 
