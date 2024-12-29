@@ -44,22 +44,33 @@ function Header() {
   <br />
   <Container>
   <Row>
-  { search.length > 0 && datas.map((e,k)=>{
+  {datas.filter((e)=>{
+  if(search=== ""){
+    return("");
+  }
+  else if(e.title.toLowerCase().includes(search.toLowerCase())){
+    return(e)
+  }
+  })
+  .map((i)=>{
     return(
-      
-            <Col lg={4}>
-             <div>
-      <img src={e.image} alt="ihi" height={200} width={200} />
-      <p>{e.name.toLowerCase().includes(search.toLowerCase())? e.name :""}</p>
-      <h4>{e.title}</h4>
-      <p>{e.price}</p>
-       </div>
-            </Col>
-    ) 
-  })}
+      <Col lg={4}>
+      <Link  to={'Search_shop/'+ i.cont}>
+        <center>   
+        <div key={i.cont}>
+        <img src={i.image} alt="not" height={`200px`} width={`200px`}  />
+        <p>{i.name}</p>
+        <h5>{i.title}</h5>
+        <p>{i.price}</p>
+      </div>
+      </center>
+      </Link>
+      </Col>
+    )
+  })
+     }
    </Row>  
     </Container>
-    
   </div>
 </div>
 {/* log in*/}
@@ -196,18 +207,31 @@ function Header() {
   <br />
   <Container>
   <Row>
-  { search.length > 0 && datas.map((e,k)=>{
+  {datas.filter((e)=>{
+  if(search=== ""){
+    return("");
+  }
+  else if(e.title.toLowerCase().includes(search.toLowerCase())){
+    return(e)
+  }
+  })
+  .map((i)=>{
     return(
-            <Col lg={4}  >
-      <div>
-      <img src={e.image} alt="ihi" height={200} width={200} />
-      <p>{e.name.toLowerCase().includes(search.toLowerCase())? e.name :""}</p>
-      <h4>{e.title}</h4>
-      <p>{e.price}</p>
-       </div>
-    </Col>
-    ) 
-  })}
+      <Col lg={4}>
+      <Link  to={'Search_shop/'+ i.cont}>
+        <center>   
+        <div key={i.cont}>
+        <img src={i.image} alt="not" height={`200px`} width={`200px`}  />
+        <p>{i.name}</p>
+        <h5>{i.title}</h5>
+        <p>{i.price}</p>
+      </div>
+      </center>
+      </Link>
+      </Col>
+    )
+  })
+     }
    </Row>  
     </Container>
  </div>

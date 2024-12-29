@@ -18,6 +18,7 @@ import Singleshop from './Singleshop'
 import Favorit from './Favorit'
 import Singleshop2 from '../Components/Singleshop2'
 import Singleshop3 from './Singleshop3'
+import Search_shop from './Search_shop'
 
 function Router() {
   const link1=page.link1
@@ -47,8 +48,19 @@ function Router() {
           </Route> 
           <Route path='/SHOP/singleshop/:id' element={<Singleshop/>}/>
           <Route path={'/favorite'}  element={<Favorit/>}/>
+         
           <Route path='singleshop2/:id' element={<Singleshop2/>}/>
+          <Route path='/HOME/singleshop2/:id' element={<Singleshop2/>}/>
+         
           <Route  path={'singleshop3/:id'} element={<Singleshop3/>}/>
+          <Route  path={'/HOME/singleshop3/:id'} element={<Singleshop3/>}/>
+         
+          <Route  path={'Search_shop/:id'} element={<Search_shop/>}/>
+          <Route  path={'/HOME/Search_shop/:id'} element={<Search_shop/>}/>
+          <Route  path={'/SHOP/Search_shop/:id'} element={<Search_shop/>}/>
+          <Route  path={'/ABOUT/Search_shop/:id'} element={<Search_shop/>}/>
+          <Route  path={'/BLOG/Search_shop/:id'} element={<Search_shop/>}/>
+          <Route  path={'/CONTACTUS/Search_shop/:id'} element={<Search_shop/>}/>
         </Routes>
        </BrowserRouter>
     </>

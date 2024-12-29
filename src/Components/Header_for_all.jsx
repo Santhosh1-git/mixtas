@@ -6,7 +6,11 @@ import { Container,Row,Col } from 'react-bootstrap'
 import { Checkbox } from '@mui/material'
 import {FormControlLabel} from '@mui/material'
 import { useState } from 'react'
+import { shop_search } from './Sreach_content'
 function Header_for_all() {
+  const [search,setsearch]=useState("")
+  const [datas,setdatas]=useState(shop_search)
+
   const [nav2,setNav2]=useState("none")
     const link1=page.link1
     const link2=page.link2
@@ -72,7 +76,7 @@ function Header_for_all() {
 </form>
   </div> 
 </div>
-<i class="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
+<i class="fa-solid fa-magnifying-glass  search_icon_1 "    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
@@ -82,8 +86,39 @@ function Header_for_all() {
   </div>
   <div class="offcanvas-body">
     <center>
-  <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+  <input type="text"  onChange={((e)=>{setsearch(e.target.value)})} id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
   </center>
+  <br />
+  <br />
+  <Container>
+  <Row>
+  {datas.filter((e)=>{
+  if(search=== ""){
+    return("");
+  }
+  else if(e.title.toLowerCase().includes(search.toLowerCase())){
+    return(e)
+  }
+  })
+  .map((i)=>{
+    return(
+      <Col lg={4}>
+      <Link  to={'Search_shop/'+ i.cont}>
+        <center>   
+        <div key={i.cont}>
+        <img src={i.image} alt="not" height={`200px`} width={`200px`}  />
+        <p>{i.name}</p>
+        <h5>{i.title}</h5>
+        <p>{i.price}</p>
+      </div>
+      </center>
+      </Link>
+      </Col>
+    )
+  })
+     }
+   </Row>  
+    </Container>
   </div>
 </div>
     <i class="fa-regular fa-heart all_heart "></i>
@@ -169,8 +204,38 @@ function Header_for_all() {
  </div>
  <div class="offcanvas-body">
    <center>
- <input type="text"  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+ <input type="text" onChange={((e)=>{setsearch(e.target.value)})}  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
  </center>
+ <br />
+ <br />
+ <Container>
+  <Row>
+  {datas.filter((e)=>{
+  if(search=== ""){
+    return("");
+  }
+  else if(e.title.toLowerCase().includes(search.toLowerCase())){
+    return(e)
+  }
+  })
+  .map((i)=>{
+    return(
+      <Col lg={4}>
+      <Link  to={'Search_shop/'+ i.cont}>
+        <center>   
+        <div key={i.cont}>
+        <img src={i.image} alt="not" height={`200px`} width={`200px`}  />
+        <p>{i.name}</p>
+        <h5>{i.title}</h5>
+        <p>{i.price}</p>
+      </div>
+      </center>
+      </Link>
+      </Col>
+    )
+  })
+     }   </Row>  
+    </Container>
  </div>
 </div>
 

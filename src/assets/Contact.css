@@ -75,7 +75,10 @@
 }
 
 
-@media screen and (max-width:1024px) {
-
+@media screen and (max-width:766px) {
+    .map {
+        text-align: center !important;
+        margin-top: 10% !important;
+    }
     
 }
