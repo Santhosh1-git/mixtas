@@ -14,7 +14,7 @@ function Endbar() {
         <div id='content_1' >
           <h4>Mixtas</h4>
           <p> Whether you're a trendsetter, a minimalist, or an adventurer at heart, Mixtas has something for everyone. Our diverse range of styles caters to various personas.</p>
-          <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-meta"></i>
+          <i className="fa-brands fa-facebook-f"></i><i className="fa-brands fa-x-twitter"></i><i className="fa-brands fa-instagram"></i><i className="fa-brands fa-meta"></i>
           </div>
         </Col>
         <Col lg='2'md={4} >

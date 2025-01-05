@@ -37,21 +37,21 @@ function Blog() {
         <Row>
           <Col lg={4} md={12} >
              <div id='blog_details' >
-         <TextField variant="outlined" id='int1'  label="Search" type="email" /><i className='fa fa-search search_icon ' ></i>
+         {/* <TextField variant="outlined" id='int1'  label="Search" type="email" /><i className='fa fa-search search_icon ' ></i> */}
           <br />    
           <br />    
           <br />    
            <div id='boxes' >
             
-         <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         <h5>Categories</h5>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box1 ">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box1 ">
         <ul>
         <li>Men Clothing <span className='acrot_1s' >3</span> </li>
         <li>News <span className='acrot_1s' >6</span> </li>
@@ -65,13 +65,14 @@ function Blog() {
 <br />
 <br />
 
-<div class="accordion" id="accordionExample">
-    <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box2 ">
+<div className="accordion" id="accordionExample">
+    <div id="collapsetwo" className="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box2 ">
         <center>
         <p className='text-secondary' >December 2024</p>
         </center>
           <table>
+            <tbody>
             <tr>
               <th>M</th>
               <th>T</th>
@@ -81,6 +82,8 @@ function Blog() {
               <th>S</th>
               <th>S</th>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td></td>
               <td></td>
@@ -90,6 +93,8 @@ function Blog() {
               <td>2</td>
               <td>3</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>4</td>
               <td>5</td>
@@ -99,6 +104,8 @@ function Blog() {
               <td>9</td>
               <td>10</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>11</td>
               <td>12</td>
@@ -108,6 +115,8 @@ function Blog() {
               <td>16</td>
               <td>17</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>18</td>
               <td>19</td>
@@ -117,6 +126,8 @@ function Blog() {
               <td>23</td>
               <td>24</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>25</td>
               <td>26</td>
@@ -126,38 +137,39 @@ function Blog() {
               <td>30</td>
               <td>31</td>
             </tr>
+            </tbody>
           </table>
       </div>
     </div>
   </div>
   <br />
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingthree">
-      <button class="accordion-button" type="button"  data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+<div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingthree">
+      <button className="accordion-button" type="button"  data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
         <h5>Archives</h5>
       </button>
     </h2>
-    <div id="collapsethree" class="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box3 ">
-      <select class="form-select" aria-label="Default select example">
-          <option selected>select month</option>
-          <option value="2">december 2024</option>
+    <div id="collapsethree" className="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box3 ">
+<select className="form-select" defaultValue="option2">
+    <option value="option1" >select month</option>
+    <option  value="option2" >december 2024</option>
 </select>
       </div>
     </div>
   </div>
   </div>
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfour">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfour">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
         <h5>Recent Posts</h5>
       </button>
     </h2>
-    <div id="collapsefour" class="accordion-collapse collapse show" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box4 ">
+    <div id="collapsefour" className="accordion-collapse collapse show" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box4 ">
         <Container>
           <Row>
             <Col lg={4} >
@@ -204,15 +216,15 @@ function Blog() {
   </div>
   </div>
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfive">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfive">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
         <h5>Tags</h5>
       </button>
     </h2>
-    <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box5 ">
+    <div id="collapsefive" className="accordion-collapse collapse show" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box5 ">
        <span className='border_tag' >clothing </span><span className='border_tag' >men</span><span className='border_tag' > posts</span>
        <br />
        <br />
@@ -225,27 +237,26 @@ function Blog() {
  </div>
  </div>
  
- <i class="fa-solid fa-sliders bars-head123 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
-<div class="offcanvas offcanvas-start can123" tabindex="-1" id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ <i className="fa-solid fa-sliders bars-head123 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
+<div className="offcanvas offcanvas-start can123"  id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
+  <div className="offcanvas-header">
+    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">             
+  <div className="offcanvas-body">             
          <TextField variant="outlined" id='int1'  label="Search" type="email" /><i className='fa fa-search search_icon ' ></i>
           <br />    
           <br />    
           <br />    
-           <div id='boxes' >
-            
-         <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <div id='boxes' >            
+         <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         <h5>Categories</h5>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box1 ">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box1 ">
         <ul>
         <li>Men Clothing <span className='acrot_1s' >3</span> </li>
         <li>News <span className='acrot_1s' >6</span> </li>
@@ -259,13 +270,14 @@ function Blog() {
 <br />
 <br />
 
-<div class="accordion" id="accordionExample">
-    <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box2 ">
+<div className="accordion" id="accordionExample">
+    <div id="collapsetwo" className="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box2 ">
         <center>
         <p className='text-secondary' >December 2024</p>
         </center>
           <table>
+            <tbody>
             <tr>
               <th>M</th>
               <th>T</th>
@@ -275,6 +287,8 @@ function Blog() {
               <th>S</th>
               <th>S</th>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td></td>
               <td></td>
@@ -284,6 +298,8 @@ function Blog() {
               <td>2</td>
               <td>3</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>4</td>
               <td>5</td>
@@ -293,6 +309,8 @@ function Blog() {
               <td>9</td>
               <td>10</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>11</td>
               <td>12</td>
@@ -302,6 +320,8 @@ function Blog() {
               <td>16</td>
               <td>17</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>18</td>
               <td>19</td>
@@ -311,6 +331,8 @@ function Blog() {
               <td>23</td>
               <td>24</td>
             </tr>
+            </tbody>
+            <tbody>
             <tr>
               <td>25</td>
               <td>26</td>
@@ -320,21 +342,22 @@ function Blog() {
               <td>30</td>
               <td>31</td>
             </tr>
+            </tbody>
           </table>
       </div>
     </div>
   </div>
   <br />
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingthree">
-      <button class="accordion-button" type="button"  data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+<div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingthree">
+      <button className="accordion-button" type="button"  data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
         <h5>Archives</h5>
       </button>
     </h2>
-    <div id="collapsethree" class="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box3 ">
-      <select class="form-select" aria-label="Default select example">
+    <div id="collapsethree" className="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box3 ">
+      <select className="form-select" aria-label="Default select example">
           <option selected>select month</option>
           <option value="2">december 2024</option>
 </select>
@@ -343,15 +366,15 @@ function Blog() {
   </div>
   </div>
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfour">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfour">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
         <h5>Recent Posts</h5>
       </button>
     </h2>
-    <div id="collapsefour" class="accordion-collapse collapse show" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box4 ">
+    <div id="collapsefour" className="accordion-collapse collapse show" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box4 ">
         <Container>
           <Row>
             <Col lg={4} >
@@ -398,15 +421,15 @@ function Blog() {
   </div>
   </div>
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfive">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfive">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
         <h5>Tags</h5>
       </button>
     </h2>
-    <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-      <div class="accordion-body body_box5 ">
+    <div id="collapsefive" className="accordion-collapse collapse show" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div className="accordion-body body_box5 ">
        <span className='border_tag' >clothing </span><span className='border_tag' >men</span><span className='border_tag' > posts</span>
        <br />
        <br />
@@ -418,7 +441,7 @@ function Blog() {
 
  </div>
          
-  <div class="dropdown mt-3">
+  <div className="dropdown mt-3">
     </div>
   </div>
 </div>

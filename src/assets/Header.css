@@ -61,6 +61,17 @@ a{
     text-align: start !important;
     font-size: 20px;
 }
+/* header2 */
+#search_int_head2{
+    border:none;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    outline: none !important;
+    width: 50%;
+    padding: 20px;
+    text-align: start !important;
+    font-size: 20px;
+}
+/* header2 end */
 
 .search_i{
     color: silver !important;

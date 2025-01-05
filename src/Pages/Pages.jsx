@@ -38,20 +38,20 @@ function Pages() {
           <Col lg='12' md={12} >
     <p>
       <div className='collaps_btns' >
-  <a class="btn"  data-bs-toggle="collapse" href=".multi-collapse1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Mixtas</a>
+  <a className="btn"  data-bs-toggle="collapse" href=".multi-collapse1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Mixtas</a>
 
-  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Our Story</button>
+  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Our Story</button>
   
-  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Our Mission</button>
+  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Our Mission</button>
 
-  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Connect with Us</button>
+  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Connect with Us</button>
   <br />
   <hr />
   </div>
 </p>
-<div class="row">
-  <div class="col-12">
-    <div class="collapse multi-collapse1" id="multiCollapseExample1">
+<div className="row">
+  <div className="col-12">
+    <div className="collapse multi-collapse1" id="multiCollapseExample1">
       <br />
       <br />
       <Container>
@@ -126,8 +126,8 @@ function Pages() {
       </Container>
     </div>
   </div>
-  <div class="col-12"  >
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+  <div className="col-12"  >
+    <div className="collapse multi-collapse" id="multiCollapseExample2">
       <div  className='collape_2'>
         <p>In the heart of [Your City], a dream was woven into the fabric of reality – the dream of creating a clothing haven that resonates with style enthusiasts, trendsetters, and those who seek to express themselves through fashion. Welcome to [Your Store Name], where every stitch tells a story.</p>
         <p>Founded [Year], [Your Store Name] emerged from a passion for clothing and a commitment to providing a curated collection that transcends mere fashion trends. Our journey began with the belief that clothing is not just about covering the body; it’s a canvas for self-expression, an art form that reflects individuality.</p>
@@ -140,9 +140,9 @@ function Pages() {
       </div>
     </div>
   </div>
-  <div class="col-12">
-    <div class="collapse multi-collapse" id="multiCollapseExample3">
-      <div class="collapse_3">
+  <div className="col-12">
+    <div className="collapse multi-collapse" id="multiCollapseExample3">
+      <div className="collapse_3">
       <p>At [Your Store Name], we are driven by a singular mission: to empower individuals through the art of fashion. We believe that clothing is not just a means of covering the body but a powerful tool for self-expression, confidence, and individuality.</p>
       <br />
       <ol>
@@ -154,15 +154,15 @@ function Pages() {
         <li><span>Community Engagement: </span> [Your Store Name] is more than just a place to shop; it’s a community. Our mission extends beyond fashion to create a space where like-minded individuals can connect, share inspiration, and foster a sense of belonging. </li>
         <li><span>Innovation and Adaptability: </span>  In a dynamic and ever-changing fashion landscape, we embrace innovation and adaptability. Our mission is to stay ahead of the curve, offering the latest trends and technological advancements that enhance the overall shopping experience.</li>
       </ol>
-      <br />
+      <br />  
       <p>At [Your Store Name], our mission is not just about selling clothes; it’s about fostering a culture of confidence, creativity, and self-expression. Join us on this journey as we continue to redefine the way you experience fashion.”</p>
       <p>Feel free to modify the mission statement to align with the specific values and goals of your clothing store.</p>
       </div>
     </div>
   </div>
-  <div class="col-12">
-    <div class="collapse multi-collapse" id="multiCollapseExample4">
-      <div class="collapse_4">
+  <div className="col-12">
+    <div className="collapse multi-collapse" id="multiCollapseExample4">
+      <div className="collapse_4">
     <h5>Affilate Program</h5>
     <ul>
       <li>Build your own online sporting goods store!</li>

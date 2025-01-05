@@ -77,7 +77,8 @@ const [inc,setInc]=useState(0)
      {seller.map((p,o)=>{
                 if(id===p.cont){  
             return( 
-     <Col  id='hover_col' style={{position:`sticky`,top:`0px`}} >
+     <Col  id='hover_col'
+      style={{position:`sticky`,top:`0px`}} key={o} >
       <div id='content1'>  
         <div className='img_map1'>
           <img src={card_img.i1[o]} alt="not found"/>
@@ -99,7 +100,7 @@ const [inc,setInc]=useState(0)
       {seller.map((e,x)=>{ 
                if(id===e.cont){
               return (
-                <Col lg={12}   id='hover1_col' >  
+                <Col lg={12}   id='hover1_col' key={x} >  
                 <br />
                  <div id='content2'>  
                         <h4>{e.title}</h4>
@@ -154,30 +155,30 @@ const [inc,setInc]=useState(0)
                         <br />
                         <br />
                         <div id='acort'>
-                        <div class="accordion" id="accordionExample">
-  <div class="accordion-item1">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div className="accordion" id="accordionExample">
+  <div className="accordion-item1">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
        <h5>Description</h5>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <p>In WooCommerce, a product description refers to the written content that provides information about a specific product listed on an online store. It serves to inform potential customers about the features, benefits, specifications, and other relevant details of the product. A well-crafted product description can play a crucial role in influencing a customer’s purchasing decision.</p>
         <p>In WooCommerce, you can create and manage product descriptions through the WordPress dashboard. Each product has its own page where you can input and format the description, add images, set prices, and manage other product-related details. Effective product descriptions are essential for e-commerce success as they help customers make informed decisions and contribute to a positive shopping experience.</p>
       </div>
     </div>
   </div>
   </div>
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item1">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item1">
+    <h2 className="accordion-header" id="headingTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
        <h5>Additional information</h5>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
           <table>
             <tr>
               <td>Color </td>
@@ -192,15 +193,15 @@ const [inc,setInc]=useState(0)
     </div>
   </div>
   </div>
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item1">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item1">
+    <h2 className="accordion-header" id="headingThree">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
        <h5>Reviews (1)</h5>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='contact' >
         <h5>1 review for adidas X Pop Beckenbauer Track Jacket</h5>
         <br />
@@ -249,10 +250,10 @@ const [inc,setInc]=useState(0)
 <br />
 <br />
 <div id='social_icons' >
-<i class="fa-brands fa-facebook"></i> <span>facebook</span> 
- <i class="fa-brands fa-twitter"> </i><span>x</span>
- <i class="fa-brands fa-whatsapp"></i> <span>Whatspann</span>
-  <i class="fa-brands fa-linkedin"></i><span>linkedin</span>
+<i className="fa-brands fa-facebook"></i> <span>facebook</span> 
+ <i className="fa-brands fa-twitter"> </i><span>x</span>
+ <i className="fa-brands fa-whatsapp"></i> <span>Whatspann</span>
+  <i className="fa-brands fa-linkedin"></i><span>linkedin</span>
 </div>
  </div>
               </Col> 

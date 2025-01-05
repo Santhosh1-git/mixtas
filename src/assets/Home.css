@@ -255,13 +255,13 @@
     font-weight: 500;
     font-size: 20px;
     color: rgb(78, 74, 74);
-    color: wheat !important;
+    color: white !important;
 }
 .content_1 h5{
     font-size: 35px;
     text-transform: capitalize;
     line-height: 27px;
-    color: wheat !important;
+    color:white !important;
 }
 .content_1 button{
     background: white;

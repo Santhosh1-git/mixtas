@@ -28,15 +28,15 @@ function Header() {
         <Col lg={3} md={3}>
         <div id='icon_div' >
           {/* search */}
-<i class="fa-solid fa-magnifying-glass  "  id='search' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
+<i className="fa-solid fa-magnifying-glass  "  id='search' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
+<div className="offcanvas offcanvas-top"  id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div className="offcanvas-header">
     <h5 id="offcanvasTopLabel">
     </h5>
-    <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" className="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div className="offcanvas-body">
     <center>
   <input type="text"  onChange={((e)=>{setsearch(e.target.value)})}  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
   </center>
@@ -44,7 +44,7 @@ function Header() {
   <br />
   <Container>
   <Row>
-  {datas.filter((e)=>{
+  {datas.filter((e,i)=>{
   if(search=== ""){
     return("");
   }
@@ -54,7 +54,7 @@ function Header() {
   })
   .map((i)=>{
     return(
-      <Col lg={4}>
+      <Col lg={4} key={i}>
       <Link  to={'Search_shop/'+ i.cont}>
         <center>   
         <div key={i.cont}>
@@ -74,13 +74,13 @@ function Header() {
   </div>
 </div>
 {/* log in*/}
-<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
-<div class="offcanvas offcanvas-end holediv " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-<div class="offcanvas-header">
+<i  className="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
+<div className="offcanvas offcanvas-end holediv "  id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div className="offcanvas-header">
 <h5 id="offcanvasRightLabel"  className='headtag'  >log in</h5>
-<button type="button" class="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button type="button" className="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
-<div class="offcanvas-body">
+<div className="offcanvas-body">
 <form action="#">
   <input type="text" placeholder='username or email address' className='int_all' /><br /> 
   <input type="password" placeholder='password' className='int_all' /><br />
@@ -101,19 +101,19 @@ function Header() {
   </div>         
 </div>
 <Link to={'/favorite'}>
-<i class="fa-regular fa-heart heart none-sm "></i>
+<i className="fa-regular fa-heart heart none-sm "></i>
 </Link>
 
-  <i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"></i>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
+  <i className="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"></i>
+  <div className="offcanvas offcanvas-end"  id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+  <div className="offcanvas-header">
     <h5 id="offcanvasRightLabel">Shopping Cart</h5>
-    <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" className="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">  
+  <div className="offcanvas-body">  
     <center>
       <div id='last_icon' >
-      <i class="fa-solid fa-bag-shopping"  ></i>
+      <i className="fa-solid fa-bag-shopping"  ></i>
     <p>No products in the cart.</p>
     </div>
     </center>
@@ -141,16 +141,16 @@ function Header() {
 
 {/* header 2 */}
 
-<ul class="nav nav-pills nav-fill ">
-  <li class="nav-item">
-  <i class="fa-solid fa-bars bars-head1 " onClick={(()=>{setNav2(`flex`)})}  ></i>
+<ul className="nav nav-pills nav-fill ">
+  <li className="nav-item">
+  <i className="fa-solid fa-bars bars-head1 " onClick={(()=>{setNav2(`flex`)})}  ></i>
       </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <center>
   <h4 id='mixtas3'>Mixtas</h4>  
 </center> 
   </li>
-  <li class="nav-item" >
+  <li className="nav-item" >
   <h4 id='mixtas2' >Mixtas</h4>  
   <center id='link_div' >
         <Link to={'/'+link1} > <a> {link1} </a> </Link>
@@ -160,18 +160,18 @@ function Header() {
         <Link to={'/'+link5} ><a> {link5} </a></Link>
         </center>
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <div className='header'>   
     {/*user  */}
-<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_head" aria-controls="offcanvasRight" ></i>
-<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight_head" aria-labelledby="offcanvasRightLabel">
-<div class="offcanvas-header">
+<i  className="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_head" aria-controls="offcanvasRight" ></i>
+<div className="offcanvas offcanvas-end "  id="offcanvasRight_head" aria-labelledby="offcanvasRightLabel">
+<div className="offcanvas-header">
 <h5 id="offcanvasRightLabel"  className='headtag'  >log in</h5>
-<button type="button" class="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button type="button" className="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
-<div class="offcanvas-body">
+<div className="offcanvas-body">
 <form action="#">
  <input type="text" placeholder='username or email address' className='int_all' /><br />
  <input type="password" placeholder='password' className='int_all' /><br />
@@ -191,17 +191,17 @@ function Header() {
 </div>
 
 {/* search */}
-<i class="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop_head" aria-controls="offcanvasTop" ></i>
+<i className="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop_head" aria-controls="offcanvasTop" ></i>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop_head" aria-labelledby="offcanvasTopLabel">
- <div class="offcanvas-header">
+<div className="offcanvas offcanvas-top"  id="offcanvasTop_head" aria-labelledby="offcanvasTopLabel">
+ <div className="offcanvas-header">
    <h5 id="offcanvasTopLabel">
    </h5>
-   <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   <button type="button" className="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
  </div>
- <div class="offcanvas-body">
+ <div className="offcanvas-body">
    <center>
- <input type="text"  onChange={((e)=>{setsearch(e.target.value)})} id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+ <input type="text"  onChange={((e)=>{setsearch(e.target.value)})} id='search_int_head2'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
  </center>
  <br />
   <br />
@@ -238,18 +238,18 @@ function Header() {
 </div>
 
 {/* heart */}
-   <i class="fa-regular fa-heart  sm_heart"></i>
+   <i className="fa-regular fa-heart  sm_heart"></i>
    {/* shopping cart */}
-<i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
- <div class="offcanvas-header">
+<i className="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
+ <div className="offcanvas offcanvas-end"  id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
+ <div className="offcanvas-header">
    <h5 id="offcanvasRightLabel">Shopping Cart</h5>
-   <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   <button type="button" className="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
  </div>
- <div class="offcanvas-body">  
+ <div className="offcanvas-body">  
    <center>
      <div id='last_icon' >
-     <i class="fa-solid fa-bag-shopping"  ></i>
+     <i className="fa-solid fa-bag-shopping"  ></i>
    <p>No products in the cart.</p>
    </div>
    </center>
@@ -264,13 +264,13 @@ function Header() {
 
 <nav id='slider_2' style={{display:`${nav2}`}}>
     <ul id='nav_2'>
-<i class="fa-solid fa-xmark dismis_nav" onClick={(()=>{setNav2(`none`)})}></i>
-<li> <Link to={'/'+link1} > <i class="fa-solid fa-house"></i>  <a>  {link1} </a></Link></li>
+<i className="fa-solid fa-xmark dismis_nav" onClick={(()=>{setNav2(`none`)})}></i>
+<li> <Link to={'/'+link1} > <i className="fa-solid fa-house"></i>  <a>  {link1} </a></Link></li>
 
-<li><Link to={'/'+link2} > <i class="fa-solid fa-cart-shopping"></i> <a>  {link2} </a> </Link></li>
-<li><Link to={'/'+link3} ><i class="fa-solid fa-clipboard"></i> <a>  {link3} </a></Link></li>
-<li><Link to={'/'+link4} > <i class="fa-solid fa-user"></i> <a>   {link4} </a></Link></li>
-<li><Link to={'/'+link5} > <i class="fa-solid fa-phone"></i> <a>   {link5} </a></Link></li>
+<li><Link to={'/'+link2} > <i className="fa-solid fa-cart-shopping"></i> <a>  {link2} </a> </Link></li>
+<li><Link to={'/'+link3} ><i className="fa-solid fa-clipboard"></i> <a>  {link3} </a></Link></li>
+<li><Link to={'/'+link4} > <i className="fa-solid fa-user"></i> <a>   {link4} </a></Link></li>
+<li><Link to={'/'+link5} > <i className="fa-solid fa-phone"></i> <a>   {link5} </a></Link></li>
   </ul>
 </nav>
   

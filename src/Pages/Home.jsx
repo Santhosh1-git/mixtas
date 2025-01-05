@@ -151,16 +151,16 @@ function Home() {
        {/* home carousel start */}
     {/* ------------------------ */}
           
-        <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <div id="carouselExampleCaptions" className="carousel slide">
+  <div className="carousel-indicators">
+    <button type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button"   data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button"   data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner Slider_img">
-    <div class="carousel-item active" id='carousl-img' >
+  <div className="carousel-inner Slider_img">
+    <div className="carousel-item active" id='carousl-img' >
     <img src={img1} alt="slider-one"/> 
-    <div class="carousel-caption carousel_content_1 ">
+    <div className="carousel-caption carousel_content_1 ">
     <p>chic charisma</p>
     <h5>effortless</h5>
     <h5> glamour for</h5> 
@@ -168,9 +168,9 @@ function Home() {
     <Link to={'/SHOP'} >  <button className='btn btn-dark btn-outline-light' >Shop Now </button></Link>
    </div>
     </div>
-    <div class="carousel-item" id='carousl-img'  >
+    <div className="carousel-item" id='carousl-img'  >
     <img src={img2} alt="slider-two"/>
-    <div class="carousel-caption carousel_content_1 ">
+    <div className="carousel-caption carousel_content_1 ">
     <p>chic reverie</p>
     <h5>fashioning</h5>
     <h5> dreams into</h5>
@@ -178,9 +178,9 @@ function Home() {
     <Link to={'/SHOP'} ><button className='btn btn-dark btn-outline-light' >Shop Now</button></Link>
    </div>
     </div>
-    <div class="carousel-item" id='carousl-img'  >
+    <div className="carousel-item" id='carousl-img'  >
     <img src={img3} alt="slider-three"/>
-    <div class="carousel-caption carousel_content_2 ">
+    <div className="carousel-caption carousel_content_2 ">
     <p>chic reverie</p>
     <h5>fashioning</h5>
     <h5> dreams into</h5>
@@ -190,15 +190,15 @@ function Home() {
    </div>
     </div>
   </div>
-  <button class="carousel-control-prev text-dark " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <i class="fa fa-chevron-left arrow_1 "></i>
-  <span class="carousel-control-prev-icon text-dark" hidden aria-hidden="true"> </span>
-  <span class="sr-only">Previous </span>
+  <button className="carousel-control-prev text-dark " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <i className="fa fa-chevron-left arrow_1 "></i>
+  <span className="carousel-control-prev-icon text-dark" hidden aria-hidden="true"> </span>
+  <span className="sr-only">Previous </span>
   </button>
-  <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <i class="fa fa-chevron-right arrow_2"></i>
-  <span class="carousel-control-next-icon " hidden aria-hidden="true"></span>
-  <span class="sr-only">Next</span> 
+  <button className="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <i className="fa fa-chevron-right arrow_2"></i>
+  <span className="carousel-control-next-icon " hidden aria-hidden="true"></span>
+  <span className="sr-only">Next</span> 
   </button>
 </div>
         
@@ -327,15 +327,15 @@ function Home() {
     >
           {seller.map((p,o)=>{
             return(
-        <SwiperSlide>
+        <SwiperSlide key={o} >
      <Col  className='hover_col' data-aos="fade-up"
      data-aos-duration="2000" >
       <Link to={'singleshop2/' + p.cont}>  
-      <Card className='card_1'>
+      <Card className='card_1' >
         <div className='icons'>
-        <i class="fa-regular fa-heart"></i> 
-        <i class="fa-solid fa-magnifying-glass"></i>   
-        <i class="fa-solid fa-bag-shopping"></i>    
+        <i className="fa-regular fa-heart"></i> 
+        <i className="fa-solid fa-magnifying-glass"></i>   
+        <i className="fa-solid fa-bag-shopping"></i>    
       </div>
         <div className='hover_div'>
           <img src={card_img.i1[o]} alt="not found" id='card_1'  onMouseOver={hover.out[o]} onMouseOut={hover.hov[o]} height={250} />
@@ -404,13 +404,14 @@ function Home() {
       </center>
       {arrivals.map((k,s)=>{
           return(
-            <Col lg='3' md={6} className='hover_arrival_col' data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+            <Col lg='3' md={6} className='hover_arrival_col' data-aos="fade-up" 
+             data-aos-anchor-placement="center-bottom" key={s}>
               <Link to={'singleshop3/' +k.cont }>
             <Card  className='arraivls_card' id='arri_card' >
             <div className='icon' >
-         <i class="fa-regular fa-heart"></i>
-         <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+         <i className="fa-regular fa-heart"></i>
+         <i className="fa-solid fa-magnifying-glass"></i>
+        <i className="fa-solid fa-bag-shopping"></i>
        </div>
              <img src={new_arrivals.i5[s]} alt="not found" onMouseOver={out1[s]} onMouseOut={hov1[s]} />
              <CardBody className='arraivals_body'>  
@@ -593,7 +594,7 @@ function Home() {
       <Row>
         <Col lg='3' md={6} >
         <div className='delivary_detal_1' >
-        <i class="fa-solid fa-truck-fast"></i>
+        <i className="fa-solid fa-truck-fast"></i>
         <h6>Free Shipping</h6>
           <p>Free Shipping for orders</p>
           <p className='my-0 last_ptag ' >over £130</p>
@@ -601,7 +602,7 @@ function Home() {
         </Col>
         <Col lg='3' md={6} >
         <div className='delivary_detal_1' >
-        <i class="fa-solid fa-money-bill"></i>
+        <i className="fa-solid fa-money-bill"></i>
         <h6>Money Guarantee</h6>
           <p>Within 30 days for an</p>
           <p className='my-0 last_ptag ' >exchange.</p>
@@ -609,7 +610,7 @@ function Home() {
         </Col>
         <Col lg='3' md={6} >
         <div className='delivary_detal_1' >
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i className="fa-solid fa-cart-shopping"></i>
         <h6>Flexible Payment</h6>
           <p>Pay with Multiple Credit</p>
           <p className='my-0 last_ptag ' >Cards</p>
@@ -617,7 +618,7 @@ function Home() {
         </Col>
         <Col lg='3' md={6} >
         <div className='delivary_detal_1' >
-        <i class="fa-brands fa-cloudflare"></i>
+        <i className="fa-brands fa-cloudflare"></i>
         <h6>Online Support</h6>
           <p>Online Support</p>
           <p className='my-0 last_ptag ' >week</p>

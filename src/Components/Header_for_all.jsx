@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import { Link } from 'react-router-dom'
 import { page } from './Linkpages'
 import  '../assets/Header_for_all.css'
@@ -23,16 +23,14 @@ function Header_for_all() {
    
   return (
     <>
-    
     <Container fluid  >
         <Container className='uppercontainer' >
     <Row>
         <Col className='ptag' lg={10} md={8} >
             <p>Free shipping on US orders $100+ & Free exchanges</p>
         </Col>
-        <Col  className='spntag' lg={2} md={4}>
-            <span>English <i class="fa fa-chevron-down"> </i></span><span>USD<i class="fa fa-chevron-down"></i></span>
-        </Col>
+        {/* <Col  className='spntag' lg={2} md={4}>
+        </Col> */}
     </Row>
     </Container>
     <Row>
@@ -45,54 +43,59 @@ function Header_for_all() {
       {/* <h1>{add}</h1> */}
 
 
-    <ul class="nav nav_scond nav-pills nav-fill">
-  <li class="nav-item">
+    <ul className="nav nav_scond nav-pills nav-fill">
+  <li className="nav-item">
   <h4 id='mixtas'>Mixtas</h4>  
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <center id='link_div_fisrt'>
-        <Link to={'/'+link1} > <a> {link1} </a> </Link>
-        <Link to={'/'+link2} ><a> {link2} </a> </Link>
-        <Link to={'/'+link3} ><a> {link3} </a></Link>
-        <Link to={'/'+link4} ><a> {link4} </a></Link>
-        <Link to={'/'+link5} ><a> {link5} </a></Link>
+        <Link to={'/'+link1} ><a href='#'> {link1} </a> </Link>
+        <Link to={'/'+link2} ><a href='#' > {link2} </a> </Link>
+        <Link to={'/'+link3} ><a href='#' > {link3} </a></Link>
+        <Link to={'/'+link4} ><a href='#' > {link4} </a></Link>
+        <Link to={'/'+link5} ><a href='#' > {link5} </a></Link>
         </center>
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <div className='header'>    
-<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
-<div class="offcanvas offcanvas-end holediv " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-<div class="offcanvas-header">
+<i  className="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
+<div className="offcanvas offcanvas-end holediv "  id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div className="offcanvas-header">
 <h5 id="offcanvasRightLabel"  className='headtag'  >log in</h5>
-<button type="button" class="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button type="button" className="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
-<div class="offcanvas-body">
+<div className="offcanvas-body">
 <form action="#">
   <input type="text" placeholder='username or email address' className='int_all' /><br />
   <input type="password" placeholder='password' className='int_all' /><br />
+  <table>
+    <tbody>
     <tr>
     <td>
     <FormControlLabel required control={<Checkbox />} label=" Remember me" />
     </td>
   </tr>
+  </tbody>
+  </table>
   <button className='submit_btn' >log in</button>
   <p id='ptag'>Lost your password?</p>
-  <center> <span  className='text-secondary' id='register' >Not a member?
+  <center> <span  className='text-secondary' 
+  id='register' >Not a member?
   <span id='spn_2' >Register</span></span>
   </center>
  
 </form>
   </div> 
 </div>
-<i class="fa-solid fa-magnifying-glass  search_icon_1 "    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
+<i className="fa-solid fa-magnifying-glass  search_icon_1 "    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ></i>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
+<div className="offcanvas offcanvas-top"  id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div className="offcanvas-header">
     <h5 id="offcanvasTopLabel">
     </h5>
-    <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" className="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div className="offcanvas-body">
     <center>
   <input type="text"  onChange={((e)=>{setsearch(e.target.value)})} id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
   </center>
@@ -130,20 +133,20 @@ function Header_for_all() {
   </div>
 </div>
 
-    <i class="fa-regular fa-heart all_heart "></i>
+    <i className="fa-regular fa-heart all_heart "></i>
 
 
- <i class="fa-solid fa-bag-shopping"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+ <i className="fa-solid fa-bag-shopping"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
   aria-controls="offcanvasRight"></i><span>0</span>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
+  <div className="offcanvas offcanvas-end"  id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+  <div className="offcanvas-header">
     <h5 id="offcanvasRightLabel">Shopping Cart</h5>
-    <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" className="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">  
+  <div className="offcanvas-body">  
     <center>
       <div id='last_icon' >
-      <i class="fa-solid fa-bag-shopping"  ></i>
+      <i className="fa-solid fa-bag-shopping"  ></i>
     <p>No products in the cart.</p>
   
     {/* {add.map((product)=>{
@@ -165,67 +168,74 @@ function Header_for_all() {
 
 {/* secandary header */}
 
-<ul class="nav nav-pills nav-fill">
-  <li class="nav-item">
-  <i class="fa-solid fa-bars bars-head1 " onClick={(()=>{setNav2(`flex`)})}  ></i>
+<ul className="nav nav-pills nav-fill">
+  <li className="nav-item">
+  <i className="fa-solid fa-bars bars-head1 " onClick={(()=>{setNav2(`flex`)})}  ></i>
       </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <center>
   <h4>Mixtas</h4>  
 </center> 
   </li>
-  <li class="nav-item" >
+  <li className="nav-item" >
   <h4 id='mixtas2'>Mixtas</h4>  
   <center id='link_div' >
-        <Link to={'/'+link1} > <a> {link1} </a> </Link>
-        <Link to={'/'+link2} ><a> {link2} </a> </Link>
-        <Link to={'/'+link3} ><a> {link3} </a></Link>
-        <Link to={'/'+link4} ><a> {link4} </a></Link>
-        <Link to={'/'+link5} ><a> {link5} </a></Link>
+        <Link to={'/'+link1} > <a href='#'> {link1} </a></Link>
+
+        <Link to={'/'+link2} ><a href='#'> {link2} </a></Link>
+        
+        <Link to={'/'+link3} ><a href='#'> {link3} </a></Link>
+        
+        <Link to={'/'+link4} ><a href='#'> {link4} </a></Link>
+        
+        <Link to={'/'+link5} ><a href='#'> {link5} </a></Link>
         </center>
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <div className='header'>   
     {/*user  */}
-<i  class="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_head" aria-controls="offcanvasRight" ></i>
-<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight_head" aria-labelledby="offcanvasRightLabel">
-<div class="offcanvas-header">
+<i  className="fa-regular fa-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_head" aria-controls="offcanvasRight" ></i>
+<div className="offcanvas offcanvas-end "  id="offcanvasRight_head" aria-labelledby="offcanvasRightLabel">
+<div className="offcanvas-header">
 <h5 id="offcanvasRightLabel"  className='headtag'  >log in</h5>
-<button type="button" class="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button type="button" className="btn-close text-reset dismis_2 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
-<div class="offcanvas-body">
+<div className="offcanvas-body">
 <form action="#">
- <input type="text" placeholder='username or email address' className='int_all' /><br />
+  <input type="text" placeholder='username or email address' className='int_all' /><br />
  <input type="password" placeholder='password' className='int_all' /><br />
+ <table> 
+   <tbody>
    <tr>
    <td>
    <FormControlLabel required control={<Checkbox />} label=" Remember me" />
    </td>
  </tr>
+ </tbody>
+ </table>
  <button className='submit_btn' >log in</button>
  <p id='ptag'>Lost your password?</p>
  <center> <span  className='text-secondary' id='register' >Not a member?
  <span id='spn_2' >Register</span></span>
  </center>
-
 </form>
  </div> 
 </div>
 
 {/* search */}
-<i class="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop_head" aria-controls="offcanvasTop" ></i>
+<i className="fa-solid fa-magnifying-glass  search_icon_1 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop_head" aria-controls="offcanvasTop" ></i>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop_head" aria-labelledby="offcanvasTopLabel">
- <div class="offcanvas-header">
+<div className="offcanvas offcanvas-top"  id="offcanvasTop_head" aria-labelledby="offcanvasTopLabel">
+ <div className="offcanvas-header">
    <h5 id="offcanvasTopLabel">
    </h5>
-   <button type="button" class="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   <button type="button" className="btn-close text-reset dismis_1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
  </div>
- <div class="offcanvas-body">
+ <div className="offcanvas-body">
    <center>
- <input type="text" onChange={((e)=>{setsearch(e.target.value)})}  id='search_int'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
+ <input type="text" onChange={((e)=>{setsearch(e.target.value)})}  id='search_int_head2'  placeholder='Product Search'/> <i className='fa-solid fa-magnifying-glass search_i ' ></i>
  </center>
  <br />
  <br />
@@ -261,18 +271,18 @@ function Header_for_all() {
 </div>
 
 {/* heart */}
-   <i class="fa-regular fa-heart  sm_heart"></i>
+   <i className="fa-regular fa-heart  sm_heart"></i>
    {/* shopping cart */}
-<i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
- <div class="offcanvas-header">
+<i className="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
+ <div className="offcanvas offcanvas-end"  id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
+ <div className="offcanvas-header">
    <h5 id="offcanvasRightLabel">Shopping Cart</h5>
-   <button type="button" class="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   <button type="button" className="btn-close text-reset dissmis_3 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
  </div>
- <div class="offcanvas-body">  
+ <div className="offcanvas-body">  
    <center>
      <div id='last_icon' >
-     <i class="fa-solid fa-bag-shopping"  ></i>
+     <i className="fa-solid fa-bag-shopping"  ></i>
    <p>No products in the cart.</p>
    </div>
    </center>
@@ -284,15 +294,14 @@ function Header_for_all() {
 
 <nav id='slider_2' style={{display:`${nav2}`}}>
     <ul id='nav_2'>
-<i class="fa-solid fa-xmark dismis_nav" onClick={(()=>{setNav2(`none`)})}></i>
-<li> <Link to={'/'+link1} > <i class="fa-solid fa-house"></i>  <a>  {link1} </a></Link></li>
-<li><Link to={'/'+link2} > <i class="fa-solid fa-cart-shopping"></i> <a>  {link2} </a> </Link></li>
-<li><Link to={'/'+link3} ><i class="fa-solid fa-clipboard"></i> <a>  {link3} </a></Link></li>
-<li><Link to={'/'+link4} > <i class="fa-solid fa-user"></i> <a>   {link4} </a></Link></li>
-<li><Link to={'/'+link5} > <i class="fa-solid fa-phone"></i> <a>   {link5} </a></Link></li>
+<i className="fa-solid fa-xmark dismis_nav" onClick={(()=>{setNav2(`none`)})}></i>
+<li> <Link to={'/'+link1} > <i className="fa-solid fa-house"></i>  <a href='#'>{link1}</a></Link></li>
+<li><Link to={'/'+link2} > <i className="fa-solid fa-cart-shopping"></i> <a href='#'>{link2}</a> </Link></li>
+<li><Link to={'/'+link3} ><i className="fa-solid fa-clipboard"></i> <a href='#'>{link3}</a></Link></li>
+<li><Link to={'/'+link4} > <i className="fa-solid fa-user"></i> <a href='#'>{link4}</a></Link></li>
+<li><Link to={'/'+link5} > <i className="fa-solid fa-phone"></i> <a href='#'>{link5}</a></Link></li>
   </ul>
 </nav>
-    
     </>
   )
 }

@@ -34,7 +34,7 @@ function Contactus() {
           <Row>
             <Col lg='3' md={3} >  
             <div className='map' >
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
             <h5>Store Address</h5>
             <p>PO Box 16122 Collins Street</p>
             <p>West Victoria 8007 Australia</p>
@@ -42,7 +42,7 @@ function Contactus() {
             </Col>
             <Col lg='3' md={3} >
             <div className='map' >
-            <i class="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-phone"></i>
             <h5>Call Info</h5>
             <p>Open a chat or give us call at</p>
             <p>91+98427641</p>
@@ -50,7 +50,7 @@ function Contactus() {
             </Col>
             <Col lg='3' md={3} >
             <div className='map' >
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
             <h5>Email Support</h5>
             <p>Sent mail to</p>
             <p><a href='mailto:santhoshppn92@gmail.com' className='text-secondary' >santhoshppn92@gmail.com </a></p>
@@ -58,7 +58,7 @@ function Contactus() {
             </Col>
             <Col lg='3' md={3} >
             <div className='map' >
-            <i class="fa-solid fa-inbox"></i>
+            <i className="fa-solid fa-inbox"></i>
             <h5>Live Support</h5>
             <p>Live chat service</p>
             <p>https://www.livechat.com</p>

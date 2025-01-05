@@ -116,22 +116,22 @@ const [a,setA]=useState(12)
 <div>
   <Container id='top_container'>
       <Row className='tab_div'>
-      <i class="fa-solid fa-sliders bars-head12 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
-<div class="offcanvas offcanvas-start can12" tabindex="-1" id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <i className="fa-solid fa-sliders bars-head12 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
+<div className="offcanvas offcanvas-start can12" tabindex="-1" id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
+  <div className="offcanvas-header">
+    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div className="offcanvas-body">
   <div id='occadian1'>
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item ">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div className="accordion" id="accordionExample">
+  <div className="accordion-item ">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       <p className='tab_heading ' >Product Categories</p>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
        <div id='tab_1' >
         <ul>
             <li><span className='start' > Bags  </span>       <span className='end' >(4)</span></li>
@@ -149,15 +149,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
        <p className='tab_heading' >Price</p>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_2' >
           <ul>
             <li>$50-$100</li>
@@ -174,15 +174,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
        <p className='tab_heading' >color</p>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_3' >        
             <ul>
                 <li> <button className='color1' ></button>blue<span className='end'>(46)</span> </li>
@@ -198,15 +198,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfour">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
       <p className='tab_heading' >Size</p>
       </button>
     </h2>
-    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapsefour" className="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_4' >
         <ul>
           <li> large <span className='end' >(46)</span></li>
@@ -220,15 +220,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfive">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
       <p className='tab_heading' >Tags</p>
       </button>
     </h2>
-    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapsefive" className="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div  id='tab_5' >
         <ul>
           <li><span className='bg_1' >clothing  </span> <span className='bg_1' > etc</span> <span className='bg_1'  >   fashion</span></li>
@@ -243,21 +243,21 @@ const [a,setA]=useState(12)
   </div>
   </div>
   </div>
-  <div class="dropdown mt-3">
+  <div className="dropdown mt-3">
     </div>
   </div>
 </div>
       <Col lg={3} id={'ocardian_div'} >
       <div id='occadian'>
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item ">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div className="accordion" id="accordionExample">
+  <div className="accordion-item ">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       <p className='tab_heading ' >Product Categories</p>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
        <div id='tab_1' >
         <ul>
             <li><span className='start' > Bags  </span>       <span className='end' >(4)</span></li>
@@ -275,15 +275,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
        <p className='tab_heading' >Price</p>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_2' >
           <ul>
             <li>$50-$100</li>
@@ -300,15 +300,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
        <p className='tab_heading' >color</p>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_3' >        
             <ul>
                 <li> <button className='color1' ></button>blue<span className='end'>(46)</span> </li>
@@ -324,15 +324,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfour">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
       <p className='tab_heading' >Size</p>
       </button>
     </h2>
-    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapsefour" className="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div id='tab_4' >
         <ul>
           <li> large <span className='end' >(46)</span></li>
@@ -346,15 +346,15 @@ const [a,setA]=useState(12)
   </div>
   <br />
   <br />
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingfive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+  <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingfive">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
       <p className='tab_heading' >Tags</p>
       </button>
     </h2>
-    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapsefive" className="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
         <div  id='tab_5' >
         <ul>
           <li><span className='bg_1' >clothing  </span> <span className='bg_1' > etc</span> <span className='bg_1'  >   fashion</span></li>
@@ -384,20 +384,20 @@ const [a,setA]=useState(12)
        </Col>
       <Col lg={4} md={4}>
         <div id='row_col_icon' > 
-        <i class="fa-solid fa-chart-simple i1"></i><i class="fa-solid fa-list i2 "></i><span>default sorting</span>
+        <i className="fa-solid fa-chart-simple i1"></i><i className="fa-solid fa-list i2 "></i><span>default sorting</span>
      </div>
 </Col>
       </Row>
       <Row className='img_row'> 
       {shop_header.map((e,x)=>{  
               return (
-                <Col lg={4} md={6}  className='shop_img_hover'>  
-                {/* <Link to={'singleshop/'+ e.cont}> */}
+                <Col lg={4} md={6}  className='shop_img_hover' key={x} >  
+                <Link to={'singleshop/'+ e.cont}>
                 <div className='icon_div'>
             <div className='icon_new' >
-                <i class="fa-regular fa-heart "></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bag-shopping"
+                <i className="fa-regular fa-heart "></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-bag-shopping"
                   onClick={(()=>{setProp(e)})}></i>
                 </div>
                 <div className='img_div'> 
@@ -407,7 +407,7 @@ const [a,setA]=useState(12)
                         <h4>{e.title}</h4>  
                         <p>{e.price}</p> 
                         </div> 
-                 {/* </Link> */} 
+                 </Link> 
               </Col>  
               )
             })} 

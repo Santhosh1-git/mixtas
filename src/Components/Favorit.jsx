@@ -40,10 +40,10 @@ function Favorit() {
         
            <Col>
            <br />
-           <i class="fa-solid fa-location-dot"></i>
-           <i class="fa-solid fa-phone"></i>
-           <i class="fa-solid fa-envelope"></i>
-           <i class="fa-solid fa-inbox"></i>
+           <i className="fa-solid fa-location-dot"></i>
+           <i className="fa-solid fa-phone"></i>
+           <i className="fa-solid fa-envelope"></i>
+           <i className="fa-solid fa-inbox"></i>
            
            </Col>   
 
