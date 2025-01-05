@@ -84,13 +84,13 @@ import h36 from '../shop_images/all/hover_36.jpg'
 import h37 from '../shop_images/all/hover_37.jpg'
 import h38 from '../shop_images/all/hover_38.jpg'
 import h39 from '../shop_images/all/hover_39.jpg'
-function Shop() {
+function Shop(){
+  const [prop,setProp]=useState()
   const imgs=[img1,img2,img3,img4,img5,img6,img7,img8,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39]
   const himg=[h1,h2,h3,h4,h5,h6,h7,h8,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39]
+  
 
- 
 const [a,setA]=useState(12)
-
   return (    
     <>
     {/* --------------------------- */}
@@ -392,22 +392,23 @@ const [a,setA]=useState(12)
       {shop_header.map((e,x)=>{  
               return (
                 <Col lg={4} md={6}  className='shop_img_hover'>  
-                <Link to={'singleshop/'+ e.cont}>
+                {/* <Link to={'singleshop/'+ e.cont}> */}
                 <div className='icon_div'>
-                        <div className='icon_new' >
-                            <i class="fa-regular fa-heart "></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            </div>
+            <div className='icon_new' >
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bag-shopping"
+                  onClick={(()=>{setProp(e)})}></i>
+                </div>
                 <div className='img_div'> 
                   <img src={imgs[x]}  onMouseOver={((e)=>{e.target.src=himg[x]})} onMouseOut={((e)=>{e.target.src=imgs[x]})} />
                   </div>  
                         <p>{e.name}</p> 
                         <h4>{e.title}</h4>  
                         <p>{e.price}</p> 
-                        </div>
-                 </Link>
-              </Col> 
+                        </div> 
+                 {/* </Link> */} 
+              </Col>  
               )
             })} 
      </Row>  

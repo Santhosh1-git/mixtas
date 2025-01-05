@@ -7,7 +7,9 @@ import { Checkbox } from '@mui/material'
 import {FormControlLabel} from '@mui/material'
 import { useState } from 'react'
 import { shop_search } from './Sreach_content'
+
 function Header_for_all() {
+
   const [search,setsearch]=useState("")
   const [datas,setdatas]=useState(shop_search)
 
@@ -17,8 +19,11 @@ function Header_for_all() {
     const link3=page.link3
     const link4=page.link4
     const link5=page.link5
+
+   
   return (
     <>
+    
     <Container fluid  >
         <Container className='uppercontainer' >
     <Row>
@@ -37,6 +42,9 @@ function Header_for_all() {
 
     
 {/* main header */}
+      {/* <h1>{add}</h1> */}
+
+
     <ul class="nav nav_scond nav-pills nav-fill">
   <li class="nav-item">
   <h4 id='mixtas'>Mixtas</h4>  
@@ -121,8 +129,12 @@ function Header_for_all() {
     </Container>
   </div>
 </div>
+
     <i class="fa-regular fa-heart all_heart "></i>
- <i class="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"></i>
+
+
+ <i class="fa-solid fa-bag-shopping"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+  aria-controls="offcanvasRight"></i><span>0</span>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
     <h5 id="offcanvasRightLabel">Shopping Cart</h5>
@@ -133,6 +145,15 @@ function Header_for_all() {
       <div id='last_icon' >
       <i class="fa-solid fa-bag-shopping"  ></i>
     <p>No products in the cart.</p>
+  
+    {/* {add.map((product)=>{
+      return(
+      <div className="shopbag">
+        <img src={product.name} alt="not font" />
+      </div>
+      )
+    })} */}
+       
     </div>
     </center>
   </div>
