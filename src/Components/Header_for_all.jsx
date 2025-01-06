@@ -9,7 +9,6 @@ import { useState } from 'react'
 import { shop_search } from './Sreach_content'
 
 function Header_for_all() {
-
   const [search,setsearch]=useState("")
   const [datas,setdatas]=useState(shop_search)
 

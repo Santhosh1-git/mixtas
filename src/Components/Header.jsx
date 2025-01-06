@@ -84,13 +84,13 @@ function Header() {
 <form action="#">
   <input type="text" placeholder='username or email address' className='int_all' /><br /> 
   <input type="password" placeholder='password' className='int_all' /><br />
+    <tbody>
     <tr>
     <td>
     <FormControlLabel required control={<Checkbox />} label=" Remember me" />
     </td>
-
   </tr>
-
+  </tbody>
   <button className='submit_btn' >log in</button>
   <p id='ptag'>Lost your password?</p>
   <center> <span  className='text-secondary' id='register' >Not a member?
@@ -175,11 +175,13 @@ function Header() {
 <form action="#">
  <input type="text" placeholder='username or email address' className='int_all' /><br />
  <input type="password" placeholder='password' className='int_all' /><br />
+   <tbody>
    <tr>
    <td>
    <FormControlLabel required control={<Checkbox />} label=" Remember me" />
    </td>
  </tr>
+ </tbody>
  <button className='submit_btn' >log in</button>
  <p id='ptag'>Lost your password?</p>
  <center> <span  className='text-secondary' id='register' >Not a member?

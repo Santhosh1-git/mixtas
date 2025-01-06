@@ -149,8 +149,7 @@ function Home() {
     <Header/>
     {/* ------------------------ */}
        {/* home carousel start */}
-    {/* ------------------------ */}
-          
+    {/* ------------------------ */}      
         <div id="carouselExampleCaptions" className="carousel slide">
   <div className="carousel-indicators">
     <button type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -367,7 +366,12 @@ function Home() {
       <Row>
         <Col lg='6' md={12}>
             <div id='col-2'>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wII9bv2P9c8?si=WMA6HiXj3PJz-Dzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wII9bv2P9c8?si=WMA6HiXj3PJz-Dzg"
+             title="YouTube video player" 
+             
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              
+               ></iframe>
             </div>
         </Col>
         <Col lg='6' md={12} >
@@ -633,7 +637,7 @@ function Home() {
 
     {/* end bar */}
     <Endbar/>
-    
+    allowFullScreen
     </>
   )
 }

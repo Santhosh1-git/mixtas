@@ -85,10 +85,9 @@ import h37 from '../shop_images/all/hover_37.jpg'
 import h38 from '../shop_images/all/hover_38.jpg'
 import h39 from '../shop_images/all/hover_39.jpg'
 function Shop(){
-  const [prop,setProp]=useState()
   const imgs=[img1,img2,img3,img4,img5,img6,img7,img8,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39]
   const himg=[h1,h2,h3,h4,h5,h6,h7,h8,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39]
-  
+
 
 const [a,setA]=useState(12)
   return (    
@@ -117,7 +116,7 @@ const [a,setA]=useState(12)
   <Container id='top_container'>
       <Row className='tab_div'>
       <i className="fa-solid fa-sliders bars-head12 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
-<div className="offcanvas offcanvas-start can12" tabindex="-1" id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
+<div className="offcanvas offcanvas-start can12"  id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
   <div className="offcanvas-header">
     <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
@@ -392,22 +391,22 @@ const [a,setA]=useState(12)
       {shop_header.map((e,x)=>{  
               return (
                 <Col lg={4} md={6}  className='shop_img_hover' key={x} >  
-                <Link to={'singleshop/'+ e.cont}>
+                {/* <Link to={'singleshop/'+ e.cont}> */}
                 <div className='icon_div'>
             <div className='icon_new' >
                 <i className="fa-regular fa-heart "></i>
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <i className="fa-solid fa-bag-shopping"
-                  onClick={(()=>{setProp(e)})}></i>
+                  ></i>
                 </div>
                 <div className='img_div'> 
                   <img src={imgs[x]}  onMouseOver={((e)=>{e.target.src=himg[x]})} onMouseOut={((e)=>{e.target.src=imgs[x]})} />
-                  </div>  
+                  </div> 
                         <p>{e.name}</p> 
                         <h4>{e.title}</h4>  
                         <p>{e.price}</p> 
                         </div> 
-                 </Link> 
+                 {/* </Link>  */}
               </Col>  
               )
             })} 
