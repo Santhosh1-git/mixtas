@@ -11,17 +11,14 @@
 /* ---------------------- */
         /* collapse */
 /* ----------------------- */
-
-
-
 .collaps_btns button{
-    margin-right: 20px !important;
-    margin-left: 50px !important;
+    margin-right:5% !important;
     font-size: 35px !important;
     font-weight: 400;
     color: rgb(117, 115, 115);
     border: none !important;
     outline: none !important;
+   
 }
 
 .collaps_btns button:focus{
@@ -32,11 +29,13 @@
 }
 
 .collaps_btns a{
+    margin-right:2% !important;
     font-size: 35px !important;
     font-weight: 400;
     color: rgb(117, 115, 115);
     outline: none !important;
     border: none !important;
+    z-index: 800 !important;
 }
 
 /* collapse1-1 */
@@ -125,8 +124,3 @@
     margin-bottom: 10px !important;
 }
 
-element.style {
-    
-    height: 100% !important;
-    
-}

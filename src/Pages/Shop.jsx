@@ -391,7 +391,7 @@ const [a,setA]=useState(12)
       {shop_header.map((e,x)=>{  
               return (
                 <Col lg={4} md={6}  className='shop_img_hover' key={x} >  
-                {/* <Link to={'singleshop/'+ e.cont}> */}
+                <Link to={'singleshop/'+ e.cont}>
                 <div className='icon_div'>
             <div className='icon_new' >
                 <i className="fa-regular fa-heart "></i>
@@ -406,7 +406,7 @@ const [a,setA]=useState(12)
                         <h4>{e.title}</h4>  
                         <p>{e.price}</p> 
                         </div> 
-                 {/* </Link>  */}
+                 </Link> 
               </Col>  
               )
             })} 

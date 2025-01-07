@@ -6,6 +6,7 @@
 .Slider_img img{
     height: 100% !important ;
     width: 100% !important ;
+    opacity: 0.9 !important;
 }
 
 .maile_slider{
@@ -18,8 +19,7 @@
     position: absolute;
     top: 10rem;
     left: 135px;
-    color:rgb(66, 65, 65);
-
+    color:black;
 }
 
 .carousel_content_1>p{
@@ -27,7 +27,7 @@
     text-transform: capitalize;
     font-family: fantasy;
     font-weight: 300 !important ;
-    color: rgb(109, 106, 106);
+    color: rgb(151, 149, 149);
 }
 .carousel_content_1 h5{
     font-size: 80px;
@@ -56,7 +56,7 @@
     position: absolute;
     right: -40rem;
     top: 30px;
-    color: black;
+    color: white;
 }
 
 .carousel_content_2>p{
@@ -64,7 +64,7 @@
     text-transform: capitalize;
     font-family: fantasy;
     font-weight: 300 !important ;
-    color: rgb(109, 106, 106);
+    color: white;
 }
 .carousel_content_2 h5{
     font-size: 80px;

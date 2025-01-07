@@ -33,18 +33,24 @@ function Pages() {
       </Container>
       <br />
         <br />
-       
         <Container>
           <Col lg='12' md={12} >
     <p>
       <div className='collaps_btns' >
-  <a className="btn"  data-bs-toggle="collapse" href=".multi-collapse1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Mixtas</a>
+  <a className="btn"  data-bs-toggle="collapse" href=".multi-collapse1"
+   role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Mixtas</a>
 
-  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Our Story</button>
+  <button className="btn " type="button" data-bs-toggle="collapse"
+   data-bs-target="#multiCollapseExample2" aria-expanded="false" 
+   aria-controls="multiCollapseExample2">Our Story</button>
   
-  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Our Mission</button>
+  <button className="btn " type="button" data-bs-toggle="collapse"
+   data-bs-target="#multiCollapseExample3" aria-expanded="false"
+    aria-controls="multiCollapseExample3">Our Mission</button>
 
-  <button className="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Connect with Us</button>
+  <button className="btn " type="button" data-bs-toggle="collapse"
+   data-bs-target="#multiCollapseExample4" aria-expanded="false"
+    aria-controls="multiCollapseExample4">Connect with Us</button>
   <br />
   <hr />
   </div>
@@ -54,7 +60,7 @@ function Pages() {
     <div className="collapse multi-collapse1" id="multiCollapseExample1">
       <br />
       <br />
-      <Container>
+      <Container  >
       <Row>
         <Col lg={6}  md={6} >
         <div className='collapse1'>
@@ -178,8 +184,6 @@ function Pages() {
         <br />
         <br />
         <br />
-     
-
         <Endbar/>    
     </>
   )

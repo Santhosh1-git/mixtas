@@ -637,7 +637,6 @@ function Home() {
 
     {/* end bar */}
     <Endbar/>
-    allowFullScreen
     </>
   )
 }

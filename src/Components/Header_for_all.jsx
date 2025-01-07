@@ -28,8 +28,7 @@ function Header_for_all() {
         <Col className='ptag' lg={10} md={8} >
             <p>Free shipping on US orders $100+ & Free exchanges</p>
         </Col>
-        {/* <Col  className='spntag' lg={2} md={4}>
-        </Col> */}
+        
     </Row>
     </Container>
     <Row>
@@ -39,7 +38,6 @@ function Header_for_all() {
 
     
 {/* main header */}
-      {/* <h1>{add}</h1> */}
 
 
     <ul className="nav nav_scond nav-pills nav-fill">
@@ -136,7 +134,7 @@ function Header_for_all() {
 
 
  <i className="fa-solid fa-bag-shopping"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
-  aria-controls="offcanvasRight"></i><span>0</span>
+  aria-controls="offcanvasRight"></i>
   <div className="offcanvas offcanvas-end"  id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
   <div className="offcanvas-header">
     <h5 id="offcanvasRightLabel">Shopping Cart</h5>
@@ -272,7 +270,8 @@ function Header_for_all() {
 {/* heart */}
    <i className="fa-regular fa-heart  sm_heart"></i>
    {/* shopping cart */}
-<i className="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
+<i className="fa-solid fa-bag-shopping" type="button" data-bs-toggle="offcanvas"
+ data-bs-target="#offcanvasRight1_head" aria-controls="offcanvasRight"></i>
  <div className="offcanvas offcanvas-end"  id="offcanvasRight1_head" aria-labelledby="offcanvasRightLabel">
  <div className="offcanvas-header">
    <h5 id="offcanvasRightLabel">Shopping Cart</h5>
