@@ -10,11 +10,21 @@
 /* ------------------------------------------- */
             /* left boxes start */
 /* ------------------------------------------- */
+.accordion-button {
+    outline: none !important;
+    background: inherit !important;
+    border-bottom: 1px solid silver !important;
+}  
+
 #boxes{
     position: sticky !important;
     top: 0px !important;
 }
 
+#int1:focus{
+    outline: none !important;
+    border: none !important;
+}
 #int1{
     width: 250px !important;
     height: 14px;
@@ -43,7 +53,7 @@
     margin-left: -40px;
     li{
         margin-top: 15px;
-        color: rgb(82, 78, 78);   
+        color: black !important;   
     }
 }
 
@@ -56,10 +66,9 @@
 .body_box2>table{
     td{    
     border: 1px solid silver;
-    /* border-collapse:2px !important ; */
-    padding: 7px;
-        color: rgb(114, 111, 111);
-        text-align: center;
+    padding: 6.9px;
+    color: rgb(114, 111, 111);
+    text-align: center;
 }
     th{
     border: 1px solid silver;
@@ -70,24 +79,35 @@
 
     }
 }
+/* box 3 */
+.form-select{
+    box-shadow: none !important;
+    border: 1px solid silver !important;
+}
+
 /* box 4 */
 #imgs>img{
-    height: 95px;
+    height: 75px !important;
     width: 75px;
+    border-radius: 5px !important;
     margin-bottom: 40px !important;
-    margin-left: -15    px !important;
+    margin-left: -15px !important;
 }
 #box_4_content{
-    margin-bottom: 40px;
+    margin-top: -15px !important ;
     height: 95px !important ;
-    width: 100%;
-
+    width: 100% !important ;
+    overflow: hidden !important;
 }
-#box_4_content>p{
-    
-        font-size: 14.4px;
-        text-align: start !important;
-        margin-left: 10px !important;
+#box_4_content>p {
+    margin-bottom: -10px !important ;
+    font-size: 13px;
+    text-align: start !important;
+    margin-left: 10px !important;
+}   
+#dec{
+    color: black !important;
+    padding-bottom: 2px !important;
 }
 /* box_5 */
 .border_tag{
@@ -130,16 +150,16 @@
     color: rgb(146, 143, 143);
 }
 
-.adminbtns{
+.adminbtns {
     text-transform: uppercase;
-    color:  white;
+    color: white;
     background: black;
     border-radius: 8px;
     padding: 10px;
     border: none !important;
     font-weight: 500;
     margin-top: 10px;
-    margin-left: -15px;
+    margin-left: -27px;
 }
 
 .adminbtns:hover{
@@ -150,6 +170,9 @@
 .admin_img{
     margin-left: 1% !important;
 }
+.bars-head123{
+    display: none !important    ;
+}
 /* ------------------------------------------- */
             /* right column end */
 /* ------------------------------------------- */
@@ -159,5 +182,7 @@
     #blog_details{
         display: none !important;
     }
-    
+    .bars-head123{
+        display: inline-block !important    ;
+    }    
 }

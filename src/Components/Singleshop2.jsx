@@ -132,7 +132,7 @@ const [inc,setInc]=useState(0)
                             <button className='btn out ' onClick={dcr} > - </button><span> {inc} </span><button className='btn out ' onClick={incr} > + </button>
                             </div>
                            <br />
-                            <span className='btn btn-dark' >Add To Card</span>
+                            <span className='btn btn-dark' >Add To Cart</span>
                             <br />
                             <br />
                             <table  id='tab_details' > 

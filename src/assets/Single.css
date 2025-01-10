@@ -3,7 +3,6 @@
     top: 0px !important;
 }
 
-
 .img_map1>img{
     height: 600px !important ;
     width: 550px !important;
@@ -42,7 +41,6 @@
 .cont_p{
     color:rgb(116, 114, 114);
     font-size: 18px !important;
-    /*  margin-top: -35px !important; */
 }
 
 .colors ul{
@@ -95,13 +93,12 @@
     text-transform: capitalize !important;
     padding: 5px;
     border-radius: 10%;
-    margin-left: 28px !important;
+    margin-left: 20px !important;
 }
 
 .badge1:focus{
     color: white !important ;
     background: black !important ;
-   
 }
 
 #inc_dic{
@@ -125,18 +122,20 @@
     color: rgb(114, 110, 110);
 }
 
-
-
-
 /* accordion  */
+
+
 .accordion-item1{
     margin-bottom: 40px;
+}
+.accordion-body p{
+    color: rgb(114, 106, 106) !important;
 }
 
 .accordion-button{
     outline: none !important ;
     background: inherit !important;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid silver !important;
 }
 .accordion-button:focus {
     outline: none;

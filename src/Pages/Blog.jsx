@@ -32,12 +32,11 @@ function Blog() {
       <br />
       <br />
       <br />
-
       <Container>
         <Row>
           <Col lg={4} md={12} >
              <div id='blog_details' >
-         {/* <TextField variant="outlined" id='int1'  label="Search" type="email" /><i className='fa fa-search search_icon ' ></i> */}
+         <TextField variant="outlined" color="dark" id='int1'  label="Search" type="email" /><i className='fa fa-search search_icon ' ></i>
           <br />    
           <br />    
           <br />    
@@ -153,8 +152,8 @@ function Blog() {
     <div id="collapsethree" className="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
       <div className="accordion-body body_box3 ">
 <select className="form-select" defaultValue="option2">
-    <option value="option1" >select month</option>
-    <option  value="option2" >december 2024</option>
+    <option id='option'  value="option1" >Select month</option>
+    <option id='option' value="option2" >December 2024</option>
 </select>
       </div>
     </div>
@@ -175,37 +174,71 @@ function Blog() {
             <Col lg={4} >
             <div id='imgs' >
             <img src={img2} alt={'not fount'}/>
+            </div>
+            </Col>
+            <Col lg={8} >
+            <div id='box_4_content' >
+            <p className='text-secondary' id='dec' >December 19, 2023</p>
+            <p>Fashion Forward: Emerging Trends You Need to Know</p>
+            </div>
+            </Col>
+            {/* 2 */}
+            <Col lg={4} >
+            <div id='imgs' >
             <img src={img1} alt={'not fount'}/>
+            </div>
+            </Col>
+            <Col lg={8} >
+            <div id='box_4_content' >
+            <p className='text-secondary' id='dec' >December 19, 2023</p>
+            <p>Dress to Impress: A Guide to Power Dressing success</p>
+            </div>
+            </Col>
+            {/* 3 */}
+            <Col lg={4} >
+            <div id='imgs' >
             <img src={img3} alt={'not fount'}/>
+            </div>
+            </Col>
+            <Col lg={8} >
+            <div id='box_4_content' >
+            <p className='text-secondary' id='dec' >December 19, 2023</p>
+            <p>Unveiling Elegance: Timeless Fashion Trends for Women</p>
+            </div>
+            </Col>
+            {/* 4 */}
+            <Col lg={4} >
+            <div id='imgs' >
             <img src={img4} alt={'not fount'}/>
+            </div>
+            </Col>
+            <Col lg={8} >
+            <div id='box_4_content' >
+            <p className='text-secondary ' id='dec' >December 19, 2023</p>
+            <p>Gentleman’s Gazette: A Guide to Timeless Men’s Fashion</p>
+            </div>
+            </Col>
+            {/* 5 */}
+            <Col lg={4} >
+            <div id='imgs' >
             <img src={img5} alt={'not fount'}/>
+            </div>
+            </Col>
+            <Col lg={8} >
+            <div id='box_4_content' >
+            <p className='text-secondary' id='dec' >December 19, 2023</p>
+            <p>Tailored Tales: Unveiling the Latest Trends in Men’s Fashion</p>
+            </div>
+            </Col>
+            {/* 6 */}
+            <Col lg={4} >
+            <div id='imgs' >
             <img src={img6} alt={'not fount'}/>
             </div>
             </Col>
-            <Col lg={8}>
+            <Col lg={8} >
             <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
-            <p>Fashion Forward: Emerging Trends You Need to Know</p>
-            </div>
-            <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
-            <p>Dress to Impress: A Guide to Power Dressing success</p>
-            </div>
-
-            <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
-            <p>Unveiling Elegance: Timeless Fashion Trends for Women</p>
-            </div>
-            <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
-            <p>Gentleman’s Gazette: A Guide to Timeless Men’s Fashion</p>
-            </div>
-            <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
-            <p>Tailored Tales: Unveiling the Latest Trends in Men’s Fashion</p>
-            </div>
-            <div id='box_4_content' >
-            <p className='text-secondary' >December 19, 2023</p>
+            <p className='text-secondary' id='dec' >December 19, 2023</p>
             <p>small-business owners to designers, artists, and actors— </p>
             </div>
             </Col>
@@ -236,7 +269,7 @@ function Blog() {
 
  </div>
  </div>
- 
+
  <i className="fa-solid fa-sliders bars-head123 " data-bs-toggle="offcanvas" href="#offcanvasExample12" role="button" aria-controls="offcanvasExample"></i>
 <div className="offcanvas offcanvas-start can123"  id="offcanvasExample12" aria-labelledby="offcanvasExampleLabel">
   <div className="offcanvas-header">

@@ -152,10 +152,10 @@ function Singleshop3() {
                             <button className='btn out ' onClick={dcr} > - </button><span> {inc} </span><button className='btn out ' onClick={incr} > + </button>
                             </div>
                            <br />
-                            <span className='btn btn-dark' >Add To Card</span>
-                            <br />
-                            <br />
-                            <table  id='tab_details' > 
+                            <span className='btn btn-dark' >Add To Cart</span>
+                            <br/>
+                            <br/>
+                            <table  id='tab_details'> 
                               <tr>
                                 <td>SKU </td>
                                 <td className='end_tas' >N/A</td>
@@ -295,7 +295,7 @@ function Singleshop3() {
       <br />
       <Swiper 
       modules={[Navigation,Autoplay]}
-      spaceBetween={35}
+      spaceBetween={40}
       slidesPerView={4}
       navigation
       direction='horizontal'

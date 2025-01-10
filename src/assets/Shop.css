@@ -11,6 +11,7 @@
 #top_container{
     margin-top: 60px;
 }
+
 /* header end */
 
 /* imgs upper icon_content start */
@@ -22,8 +23,6 @@
 #result_showing{
     color: rgb(150, 148, 148) !important    ;
 }
-
-
 .spn1:focus{
     text-decoration: underline !important;
     text-underline-offset: 10px;
@@ -37,7 +36,6 @@
     background-color: black;
     padding: 5px;
     border:1px solid black !important;
-
 }
 .i2{
     margin-right: 10px;
@@ -46,6 +44,7 @@
     padding: 5px;
     border:1px solid black !important;
 }
+
 
 #row_col_icon span{
     text-transform: capitalize;
@@ -61,6 +60,7 @@
 /* -------------------------------------------- */
                 /* tables start */
 /* -------------------------------------------- */
+
 .tab_div{
    text-align: start !important;
    justify-items: start !important;
@@ -70,24 +70,26 @@
 #occadian{
     position: sticky;
     top: 0px !important;
-    
 }
 .end{
     float: right !important;
 }
+.accordion-button{
+    color:black !important;
+}
+
 /* hover text */
 #tab_1>ul>li>.start:hover{
-    color: black;
+    color: rgb(31, 30, 30);
 }
 
 #tab_1>ul>li{
     margin-bottom: 15px;
-
 }
 #tab_1>ul{
     list-style-type: disc;
    margin-left: -20px !important;
-   color: rgb(107, 106, 106) !important;
+   color: black !important;
 }
 
 .tab_heading{
@@ -99,7 +101,7 @@
 
 
 #tab_2>ul>li:hover{
-    color: black;
+    color: rgb(46, 44, 44);
 }
 #tab_2>ul{
     list-style: none;
@@ -110,15 +112,14 @@
     margin-bottom: 15px;
     margin-right: 40px !important;
     text-transform: capitalize;
-   color: rgb(107, 106, 106);
-
+    color: black !important;
 }
 
 /* tab 3 */
 
 /* hover */
 #tab_3>ul>li:hover{
-    color: black;
+    color: rgb(66, 64, 64);
 }
 
 
@@ -130,7 +131,7 @@
 }
 #tab_3>ul>li{
     margin-bottom: 15px;
-   color: rgb(107, 106, 106);
+   color: black !important;
 
 }
 
@@ -192,7 +193,7 @@
 
 /* hover */
 #tab_4>ul>li:hover{
-    color: black;
+    color: rgb(56, 52, 52);
 }
 
 #tab_4>ul{
@@ -201,7 +202,7 @@
    margin-left: -30px !important;
 }
 #tab_4>ul>li{
-   color: rgb(107, 106, 106);
+   color:black !important;
 }
 
 /* tab 5 */
@@ -215,12 +216,12 @@
 }
 .bg_1:hover{
     color: white;
-    background: black !important;
+    background: rgb(53, 50, 50) !important;
 }
 
 #tab_5>ul{
     list-style: none !important;
-    color: rgb(107, 106, 106);
+    color:black !important;
    margin-left: -30px !important;
 
 
@@ -285,7 +286,10 @@
 
 .icon_div p{
     color: rgb(124, 123, 123);
-    text-transform: capitalize;
+    text-transform: uppercase !important;
+}
+.products_name{
+    color: rgb(20, 20, 20)  !important ;
 }
 
 /* ----------------------------------------------------- */
@@ -298,10 +302,10 @@
     margin-bottom: -25px !important;
 }
 
-.accordion-button{
-    outline: none !important ;
+.accordion-button {
+    outline: none !important;
     background: inherit !important;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid silver !important;
 }
 .accordion-button:focus {
     outline: none;
@@ -309,8 +313,9 @@
 }
 .accordion-button>h5{
    margin-left: -17px !important;
-
 }
+
+/* tab_1 */
 
 .accordion-header{
     border: none!important;

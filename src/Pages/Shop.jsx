@@ -123,10 +123,13 @@ const [a,setA]=useState(12)
   <div className="offcanvas-body">
   <div id='occadian1'>
       <div className="accordion" id="accordionExample">
-  <div className="accordion-item ">
+  <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">
-      <button className="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-      <p className='tab_heading ' >Product Categories</p>
+      <button className="accordion-button1" 
+       data-bs-toggle="collapse" 
+        data-bs-target="#collapseOne"
+         aria-expanded="true" aria-controls="collapseOne">
+      <p className='tab_heading' >Product Categories</p>
       </button>
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -402,7 +405,7 @@ const [a,setA]=useState(12)
                 <div className='img_div'> 
                   <img src={imgs[x]}  onMouseOver={((e)=>{e.target.src=himg[x]})} onMouseOut={((e)=>{e.target.src=imgs[x]})} />
                   </div> 
-                        <p>{e.name}</p> 
+                        <p className='products_name' >{e.name}</p> 
                         <h4>{e.title}</h4>  
                         <p>{e.price}</p> 
                         </div> 

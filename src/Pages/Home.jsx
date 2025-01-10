@@ -351,8 +351,6 @@ function Home() {
             )
           })}
           </Swiper>         
-
-
     </Row>
       </Container>
 

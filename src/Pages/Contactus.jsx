@@ -75,10 +75,10 @@ function Contactus() {
             <Col lg={6}>
               <div id='given_adress'>
                 <h5>get in touch</h5>
-                <TextField className='textfi'  variant="standard" label="Your Name" /><br />
-                <TextField className='textfi' variant="standard" label="Your email" /><br />
-                <TextField className='textfi'  variant="standard" label="Subject" /><br />
-                <TextField
+                <TextField className='textfi' color="dark" variant="standard" label="Your Name" /><br />
+                <TextField className='textfi' color="dark" variant="standard" label="Your email" /><br />
+                <TextField className='textfi' color="dark"  variant="standard" label="Subject" /><br />
+                <TextField color="dark"
           id="standard-multiline-static"
           label="your message"
           multiline
